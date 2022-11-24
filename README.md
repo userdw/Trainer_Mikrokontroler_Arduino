@@ -16,7 +16,7 @@ Di pasaran, Arduino memiliki banyak versi dengan perbedaan di kapasitas memori, 
 Pada kit ini, kita akan menggunakan ```Arduino UNO```.
 
 <p align="center">
-<img src="/Gambar/arduino-uno.png" height="250">
+<img src="/Gambar/arduino-uno-smd.png" height="700">
 </p>
 
 **Spesifikasi :**
@@ -30,7 +30,16 @@ Pada kit ini, kita akan menggunakan ```Arduino UNO```.
 * SRAM : 2KB
 * EEPROM : 1KB
 
-Informasi GPIO : [Pin Out](https://content.arduino.cc/assets/Pinout-UNOrev3_latest.pdf?_gl=1*bod144*_ga*MjkyMzA2NzgxLjE2MDgxOTg5MjE.*_ga_NEXN8H46L5*MTY0MTM3MzQ3MS45MC4xLjE2NDEzNzM0NzUuMA..)
+Informasi GPIO : [Pin Out](https://content.arduino.cc/assets/Pinout-UNOrev3SMD_latest.pdf?_gl=1*11b63fw*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI2MTE5MC4xOC4xLjE2NjkyNjE0NDUuMC4wLjA.)
+
+### Pin GPIO
+
+<p align="center">
+<img src="/Gambar/pin-digital.png" height="400">
+</p>
+
+Pin dengan label **D (Digital)** merupakan pin-pin yang dapat dikonfigurasi untuk membaca maupun mengeluarkan data digital, yaitu **1 (untuk HIGH/5V) atau 0 (untuk LOW/0V)**. Selain itu, pada gambar di atas juga terdapat SCL, SDA, SCK, CIPO, COPI, dan SS yang berarti pin tersebut memiliki fitur tambahan yang dapat digunakan untuk antarmuka serial.
+
 
 
 ## Konfigurasi Awal
