@@ -6,7 +6,7 @@ Repositori ini dibuat sebagai panduan dalam menggunakan Trainer Mikrokontroler A
 
 Arduino merupakan development board yang menggunakan chip mikrokontroler seperti ATmega, ARM, dan sebagainya yang memiliki pin GPIO (General Purpose Input Output) yang dapat diprogram oleh pengguna sesuai dengan kebutuhannya.
 
-Di pasaran, Arduino memiliki banyak versi dengan perbedaan di kapasitas memori, chip prosesor yang digunakan beserta dengan kecepatan clocknya, lebar data, dan sebagainya. Beberapa macam versi Arduino yang ada di pasaran sebagai berikut:
+Di pasaran, Arduino memiliki banyak versi dengan perbedaan dikapasitas memori, chip prosesor yang digunakan beserta dengan kecepatan clocknya, lebar data, dan sebagainya. Beberapa macam versi Arduino yang ada di pasaran sebagai berikut:
 * Arduino Uno
 * Arduino Mega
 * Arduino Nano
@@ -32,13 +32,26 @@ Pada kit ini, kita akan menggunakan ```Arduino UNO```.
 
 Informasi Pin GPIO : [Pin Out](https://content.arduino.cc/assets/Pinout-UNOrev3SMD_latest.pdf?_gl=1*11b63fw*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI2MTE5MC4xOC4xLjE2NjkyNjE0NDUuMC4wLjA.)
 
+### Pin Power
+
+<p align="center">
+<img src="/Gambar/pin-power.png" height="400">
+</p>
+
+Pin dengan label power berguna sebagai pin-pin yang berhubungan dengan catu daya pada Arduino Uno. Pada pin power terdapat beberapa pin sebagai berikut:
+* **Vin :** Catu daya input dengan range tegangan sebesar 7 ~ 12V
+* **GND**
+* **GND**
+* **5V :** Catu daya output sebesar 5V yang dapat digunakan untuk catu daya sensor, arus yang dapat dikeluarkan oleh pin ini maksimal sebesar 50mA
+* **3.3V :** Catu daya output sebesar 3.3V yang dapat digunakan untuk catu daya sensor, arus yang dapat dikeluarkan oleh pin ini maksimal sebesar 50mA
+
 ### Pin Digital
 
 <p align="center">
 <img src="/Gambar/pin-digital.png" height="400">
 </p>
 
-Pin dengan label **D (Digital)** merupakan pin-pin yang dapat dikonfigurasi untuk membaca maupun mengeluarkan data digital, yaitu **1 (untuk HIGH/5V) atau 0 (untuk LOW/0V)**. Selain itu, pada gambar di atas juga terdapat SCL, SDA, SCK, CIPO, COPI, dan SS yang berarti pin tersebut memiliki fitur tambahan yang dapat digunakan untuk antarmuka serial.
+Pin dengan label **D (Digital)** merupakan pin-pin yang dapat dikonfigurasi untuk membaca maupun mengeluarkan data digital, yaitu ```1 (untuk HIGH/5V)``` atau ```0 (untuk LOW/0V)```. Selain itu, pada gambar di atas juga terdapat **SCL, SDA, SCK, CIPO, COPI, dan SS** yang berarti pin tersebut memiliki fitur tambahan yang dapat digunakan untuk antarmuka serial.
 
 ### Pin Analog
 
@@ -46,7 +59,7 @@ Pin dengan label **D (Digital)** merupakan pin-pin yang dapat dikonfigurasi untu
 <img src="/Gambar/pin-analog.png" height="200">
 </p>
 
-Pin dengan label **A (Analog)** merupakan pin-pin yang dapat digunakan untuk membaca data/tegangan analog dengan resolusi sebesar 10bit sehingga pin-pin ini dapat membaca data analog dari range 0 ~ 1023. Selain dapat digunakan untuk membaca data analog, pin-pin ini juga dapat digunakan untuk menulis maupun membaca data digital.
+Pin dengan label **A (Analog)** merupakan pin-pin yang dapat digunakan untuk membaca data/tegangan analog dengan resolusi sebesar **10bit** sehingga pin-pin ini dapat membaca data analog dari range ```0 ~ 1023```. Selain dapat digunakan untuk membaca data analog, pin-pin ini juga dapat digunakan untuk menulis maupun membaca data digital.
 
 
 
