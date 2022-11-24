@@ -45,6 +45,10 @@ Pin dengan label power berguna sebagai pin-pin yang berhubungan dengan catu daya
 * **5V :** Catu daya output sebesar 5V yang dapat digunakan untuk catu daya sensor, arus yang dapat dikeluarkan oleh pin ini maksimal sebesar 50mA
 * **3.3V :** Catu daya output sebesar 3.3V yang dapat digunakan untuk catu daya sensor, arus yang dapat dikeluarkan oleh pin ini maksimal sebesar 50mA
 
+Selain pada pin-pin yang berlabel power, Arduino Uno juga memiliki 2 port catu daya input, yaitu:
+* **Jack DC :** Dapat digunakan sebagai catu daya input melalui adaptor dengan besar tegangan 7 ~ 12V
+* **USB :** Selain digunakan sebagai antarmuka untuk mengunduh program, port ini juga sebagai penyedia catu daya untuk Arduino Uno sebesar 5V
+
 ### Pin Digital
 
 <p align="center">
