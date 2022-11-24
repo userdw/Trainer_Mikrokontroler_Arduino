@@ -64,4 +64,13 @@ Link download : [Driver CH430](https://sparks.gogo.co.nz/ch340.html)
 
 ## Memulai dengan Arduino UNO
 
+Setelah software dan driver sudah terinstal dengan baik, sekarang kita bisa menghubungkan Arduino Uno ke komputer menggunakan kabel USB setelah itu periksa pada **device manager** untuk melihat di com port berapa Arduino Uno kita terbaca di komputer.
+
+<p align="center">
+<img src="/Gambar/com-port.png" height="400">
+</p>
+
+Pada gambar di atas, Arduino Uno sudah terdeteksi di com port 4 (COM4) yang menandakan bahwa Arduino Uno sudah bisa terdeteksi di komputer.
+
+
 
