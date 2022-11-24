@@ -16,7 +16,7 @@ Di pasaran, Arduino memiliki banyak versi dengan perbedaan di kapasitas memori, 
 Pada kit ini, kita akan menggunakan ```Arduino UNO```.
 
 <p align="center">
-<img src="/Gambar/spek-arduino-uno.jpg" height="300">
+<img src="/Gambar/arduino-uno.png" height="250">
 </p>
 
 **Spesifikasi :**
@@ -29,6 +29,8 @@ Pada kit ini, kita akan menggunakan ```Arduino UNO```.
 * Memori Flash : 32KB
 * SRAM : 2KB
 * EEPROM : 1KB
+
+Informasi GPIO : [Pin Out](https://content.arduino.cc/assets/Pinout-UNOrev3_latest.pdf?_gl=1*bod144*_ga*MjkyMzA2NzgxLjE2MDgxOTg5MjE.*_ga_NEXN8H46L5*MTY0MTM3MzQ3MS45MC4xLjE2NDEzNzM0NzUuMA..)
 
 
 ## Konfigurasi Awal
@@ -51,6 +53,8 @@ Link download :
 * [Windows](https://downloads.arduino.cc/arduino-1.8.19-windows.exe?_gl=1*10zb8qe*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI1Nzg0NS4xNy4wLjE2NjkyNTc4NDUuMC4wLjA.)
 * [Mac OS X](https://downloads.arduino.cc/arduino-1.8.19-macosx.zip?_gl=1*oxswi5*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI1Nzg0NS4xNy4wLjE2NjkyNTc4NDUuMC4wLjA.)
 * [Linux 32bit](https://downloads.arduino.cc/arduino-1.8.19-linux32.tar.xz?_gl=1*h5w09j*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI1Nzg0NS4xNy4wLjE2NjkyNTc4NDUuMC4wLjA.) dan [Linux 64bit](https://downloads.arduino.cc/arduino-1.8.19-linux64.tar.xz?_gl=1*h5w09j*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI1Nzg0NS4xNy4wLjE2NjkyNTc4NDUuMC4wLjA.)
+
+Setelah file berhasil diunduh, lakukan instalasi sesuai dengan prosedur sistem operasi yang digunakan.
 
 ### Driver
 
