@@ -30,15 +30,23 @@ Pada kit ini, kita akan menggunakan ```Arduino UNO```.
 * SRAM : 2KB
 * EEPROM : 1KB
 
-Informasi GPIO : [Pin Out](https://content.arduino.cc/assets/Pinout-UNOrev3SMD_latest.pdf?_gl=1*11b63fw*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI2MTE5MC4xOC4xLjE2NjkyNjE0NDUuMC4wLjA.)
+Informasi Pin GPIO : [Pin Out](https://content.arduino.cc/assets/Pinout-UNOrev3SMD_latest.pdf?_gl=1*11b63fw*_ga*MTExNTg0MTIyNC4xNjY1NjMyOTg5*_ga_NEXN8H46L5*MTY2OTI2MTE5MC4xOC4xLjE2NjkyNjE0NDUuMC4wLjA.)
 
-### Pin GPIO
+### Pin Digital
 
 <p align="center">
 <img src="/Gambar/pin-digital.png" height="400">
 </p>
 
 Pin dengan label **D (Digital)** merupakan pin-pin yang dapat dikonfigurasi untuk membaca maupun mengeluarkan data digital, yaitu **1 (untuk HIGH/5V) atau 0 (untuk LOW/0V)**. Selain itu, pada gambar di atas juga terdapat SCL, SDA, SCK, CIPO, COPI, dan SS yang berarti pin tersebut memiliki fitur tambahan yang dapat digunakan untuk antarmuka serial.
+
+### Pin Analog
+
+<p align="center">
+<img src="/Gambar/pin-analog.png" height="200">
+</p>
+
+Pin dengan label **A (Analog)** merupakan pin-pin yang dapat digunakan untuk membaca data/tegangan analog dengan resolusi sebesar 10bit sehingga pin-pin ini dapat membaca data analog dari range 0 ~ 1023. Selain dapat digunakan untuk membaca data analog, pin-pin ini juga dapat digunakan untuk menulis maupun membaca data digital.
 
 
 
