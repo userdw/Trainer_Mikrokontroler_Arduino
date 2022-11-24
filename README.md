@@ -104,7 +104,14 @@ Setelah software dan driver sudah terinstal dengan baik, sekarang kita bisa meng
 <img src="/Gambar/com-port.png" height="400">
 </p>
 
-Pada gambar di atas, Arduino Uno sudah terdeteksi di com port 4 (COM4) yang menandakan bahwa Arduino Uno sudah bisa terdeteksi di komputer.
+Pada gambar di atas, Arduino Uno sudah terdeteksi di com port 4 (COM4) yang menandakan bahwa Arduino Uno sudah bisa terdeteksi di komputer. Setelah Arduino Uno sudah terdeteksi, selanjutnya buka aplikasi Arduino IDE. 
+
+Arduino IDE terdiri dari 3 bagian, yaitu:
+* **Editor**, bagian dimana pengguna menuliskan kode program/sketch
+* **Compiler**, bagian yang akan mengubah bentuk kode program yang ditulis oleh pengguna menjadi bahasa mesin (biner)
+* **Uploader**,
+
+
 
 
 
