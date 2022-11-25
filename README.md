@@ -148,6 +148,26 @@ Kita akan mencoba skecth example blink yang sudah disediakan oleh Arduino, caran
 <img src="/Gambar/port-arduino-ide.png" height="400">
 </p>
 
+5. Setelah portnya sudah dipilih, silahkan upload skecthnya, maka aplikasi Arduino IDE akan melakukan verifikasi skecthnya apakah ada yang error atau tidak, jika skecthnya tidak ada yang error, maka skecth dapat terupload dengan baik di board Arduino Uno dengan yang ditandai dengan **done uploading**.
+
+<p align="center">
+<img src="/Gambar/upload.png" height="400">
+</p>
+
+6. Jika proses upload program sudah berhasil silahkan melihat pada LED builtin yang ada di board Arduino Uno, maka LEDnya akan bergantian hidup dan mati selama 1 detik.
+
+### Struktur Program Pada Arduino
+
+Jika kita lihat pada contoh program/skecth blink akan ada 2 bagian, yaitu ```void setup()``` dan ```void loop()```.  Program pada Arduino terdiri 2 bagian tersebut yang kedua fungsi tersebut memiliki fungsinya masing-masing:
+* **void setup()**, fungsi ini akan dijalankan oleh board Arduino Uno hanya sekali saja saat board pertama kali dinyalakan. Fungsi ini umumnya memuat setup awal dari Arduino seperti mode pin yang digunakan akan dijadikan sebagai apa misalnya sebagai input atau output. Intinya fungsi ini sebagai persiapan sebelum program utama dieksekusi.
+* **void loop()**, fungsi ini akan dijalankan terus menerus selama board Arduinonya dalam kondisi hidup sehingga fungsi ini dijadikan sebagai tempat menulis program utama yang akan di eksekusi.
+
+<p align="center">
+<img src="/Gambar/setup-loop.png" height="400">
+</p>
+
+
+
 
 
 
