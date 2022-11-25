@@ -127,11 +127,29 @@ Dilihat dari gambar di atas, software Arduino IDE terdiri dari 3 bagian, yaitu *
 
 ### Mengupload Skecth ke Arduino Uno
 
-Pada board Arduino Uno yang kita gunakan sudah terdapat LED builtin yang terhubung ke ```pin digital 13 (D13)``` yang bisa kita hidup dan matikan dengan program. Pada dunia embedded mematikan dan menghidupkan sebuah LED sama persis seperti "Hello Word" saat kita pertama kali belajar pemrograman. 
+Pada board Arduino Uno yang kita gunakan sudah terdapat **LED builtin** yang terhubung ke ```pin digital 13 (D13)``` yang bisa kita hidup dan matikan dengan program. Pada dunia embedded mematikan dan menghidupkan **(blink)** sebuah LED sama persis seperti "Hello Word" saat kita pertama kali belajar pemrograman. 
 
 <p align="center">
-<img src="/Gambar/led-builtin.png" height="300">
+<img src="/Gambar/led-builtin.png" height="350">
 </p>
+
+Kita akan mencoba skecth example blink yang sudah disediakan oleh Arduino, caranya seperti dibawah ini:
+1. Hubungkan Arduino Uno ke komputer.
+2. Buka aplikasi Arduino IDE.
+3. Lalu klik pada menu ```file >> Examples >> 01. Basics >> Blink```.
+
+<p align="center">
+<img src="/Gambar/skecth-blink.png" height="400">
+</p>
+
+4. Setelah skecthnya sudah terbuka, pilih port Arduino Unonya terlebih dahulu, pastikan pilihan portnya sudah sesuai dengan yang ada di device manager dengan cara klik pada menu ```Tools >> Port >> COM4``` sesuaikan dengan port yang terdeteksi.
+
+<p align="center">
+<img src="/Gambar/port-arduino-ide.png" height="400">
+</p>
+
+
+
 
 
 
