@@ -166,7 +166,7 @@ Jika kita lihat pada contoh program/skecth blink akan ada 2 bagian, yaitu ```voi
 <img src="/Gambar/setup-loop.png" height="400">
 </p>
 
-
+Jika dilihat dari gambar di atas, maka **void setup()** digunakan sebagai inisialisasi mode pin sebagai output dan ini akan dijalankan **hanya sekali saja** selama board Arduino Unonya dalam kondisi hidup. Sedangkan pada bagian **void loop()** terdapat inti program, yaitu menghidupkan dan mematikan LED selama 1 detik dan fungsi ini akan dijalankan **berulang-ulang** selama Arduino Unonya dalam kondisi hidup.
 
 
 
