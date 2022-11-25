@@ -168,6 +168,12 @@ Jika kita lihat pada contoh program/skecth blink akan ada 2 bagian, yaitu ```voi
 
 Jika dilihat dari gambar di atas, maka **void setup()** digunakan sebagai inisialisasi mode pin sebagai output dan ini akan dijalankan **hanya sekali saja** selama board Arduino Unonya dalam kondisi hidup. Sedangkan pada bagian **void loop()** terdapat inti program, yaitu menghidupkan dan mematikan LED selama 1 detik dan fungsi ini akan dijalankan **berulang-ulang** selama Arduino Unonya dalam kondisi hidup.
 
+## Proyek-Proyek Mikrokontroler Arduino
+
+Setelah mencoba contoh program blink di atas, sekarang kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPIO baik sebagai input maupun output yang akan kita hubungkan dengan komponen-komponen elektronika yang bisa diikuti di bawah ini:
+1. Menyalakan dan Menghidupkan LED 5mm (GPIO sebagai Output)
+2. 
+
 
 
 
