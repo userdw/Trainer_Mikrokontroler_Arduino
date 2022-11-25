@@ -107,10 +107,31 @@ Setelah software dan driver sudah terinstal dengan baik, sekarang kita bisa meng
 Pada gambar di atas, Arduino Uno sudah terdeteksi di com port 4 (COM4) yang menandakan bahwa Arduino Uno sudah bisa terdeteksi di komputer. Setelah Arduino Uno sudah terdeteksi, selanjutnya buka aplikasi Arduino IDE. 
 
 Arduino IDE terdiri dari 3 bagian, yaitu:
-* **Editor**, bagian dimana pengguna menuliskan kode program/sketch
+* **Editor**, bagian dimana pengguna menuliskan kode program/sketch.
 * **Compiler**, bagian yang akan mengubah bentuk kode program yang ditulis oleh pengguna menjadi bahasa mesin (biner)
-* **Uploader**,
+* **Uploader**, bagian yang berguna untuk memasukan kode program ke Arduino Uno..
 
+<p align="center">
+<img src="/Gambar/antarmuka-arduino-ide.png" height="400">
+</p>
+
+Dilihat dari gambar di atas, software Arduino IDE terdiri dari 3 bagian, yaitu **menu bar, toolbar, dan lembar editor**.
+* **Menu Bar**, berguna untuk mengelola file yang berhubungan dengan program yang sudah kita buat seperti save, load, menambahkan library, dan sebagainya.
+* **Toolbar**, berguna untuk mengelola skecth seperti membuat sketch baru, compile skecth, dan lain sebagainya.
+
+<p align="center">
+<img src="/Gambar/toolbar-arduino-ide.png" height="300">
+</p>
+
+* **Lembar Editor**, sebagai tempat untuk kita menuliskan kode program/skecth yang akan dibuat.
+
+### Mengupload Skecth ke Arduino Uno
+
+Pada board Arduino Uno yang kita gunakan sudah terdapat LED builtin yang terhubung ke ```pin digital 13 (D13)``` yang bisa kita hidup dan matikan dengan program. Pada dunia embedded mematikan dan menghidupkan sebuah LED sama persis seperti "Hello Word" saat kita pertama kali belajar pemrograman. 
+
+<p align="center">
+<img src="/Gambar/led-builtin.png" height="300">
+</p>
 
 
 
