@@ -42,18 +42,6 @@ digitalWrite(13, HIGH);
 * **pin :** Nomor pin Arduino Uno.
 * **mode :** HIGH atau LOW.
 
-## Serial.print()
-Fungsi ```Serial.print()``` digunakan untuk mencetak data ke port serial sebagai teks ASCII.
-```
-Serial.print(value)
-
-Contoh:
-Serial.print("Belajar Arduino Uno"); //menulis data karakter
-Serial.print(13); //menulis data bilangan bulat
-```
-**Parameter :**
-* **val :** Nilai yang akan dicetak.
-
 ## digitalRead()
 Fungsi ```digitalRead()``` digunakan untuk membaca data **HIGH (1)** atau **LOW (0)** dari pin digital.
 ```
@@ -98,3 +86,26 @@ delay(1000); //mempause program selama 1000ms atau 1 detik
 ```
 **Parameter :**
 * **ms :** Lama waktu untuk mempause program dalam milidetik.
+
+## Serial.begin()
+Fungsi ```Serial.begin()``` digunakan untuk membuka port serial dan menentukan baudrate komunikasi serialnya.
+```
+Serial.begin(speed)
+
+Contoh:
+Serial.begin(9600); //baudrate 9600
+```
+**Parameter :**
+* **speed :** baudrate (9600, 115200, dan sebagainya).
+
+## Serial.print()
+Fungsi ```Serial.print()``` digunakan untuk mencetak data ke port serial sebagai teks ASCII.
+```
+Serial.print(value)
+
+Contoh:
+Serial.print("Belajar Arduino Uno"); //menulis data karakter
+Serial.print(13); //menulis data bilangan bulat
+```
+**Parameter :**
+* **val :** Nilai yang akan dicetak.
