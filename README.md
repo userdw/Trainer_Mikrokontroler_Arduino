@@ -172,7 +172,7 @@ Jika dilihat dari gambar di atas, maka **void setup()** digunakan sebagai inisia
 
 Setelah mencoba contoh program blink di atas, sekarang kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPIO baik sebagai input maupun output yang akan kita hubungkan dengan komponen-komponen elektronika yang bisa diikuti di bawah ini:
 
-#### A. GPIO sebagai Digital Output
+#### A. GPIO sebagai Digital Output ([Link](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/A_GPIO%20sebagai%20Digital%20Output))
 1. Menyalakan dan Menghidupkan LED 5mm
 2. Loading.....
 
