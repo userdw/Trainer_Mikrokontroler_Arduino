@@ -27,8 +27,8 @@ Contoh:
 pinMode(13, OUTPUT);
 ```
 **Parameter :**
-* **pin :** Nomor pin Arduino Uno
-* **mode :** INPUT, OUTPUT, dan INPUT_PULLUP 
+* **pin :** Nomor pin Arduino Uno.
+* **mode :** INPUT, OUTPUT, dan INPUT_PULLUP.
 
 ## digitalWrite()
 Fungsi ```digitalWrite()``` berguna untuk menuliskan nilai **HIGH (1)** dan **LOW (0)** pada pin digital.
@@ -39,8 +39,8 @@ Contoh:
 digitalWrite(13, HIGH);
 ```
 **Parameter :**
-* **pin :** Nomor pin Arduino Uno
-* **mode :** HIGH atau LOW
+* **pin :** Nomor pin Arduino Uno.
+* **mode :** HIGH atau LOW.
 
 ## Serial.print()
 Fungsi ```Serial.print()``` digunakan untuk mencetak data ke port serial sebagai teks ASCII.
@@ -52,7 +52,7 @@ Serial.print("Belajar Arduino Uno"); //menulis data karakter
 Serial.print(13); //menulis data bilangan bulat
 ```
 **Parameter :**
-* **val :** Nilai yang akan dicetak
+* **val :** Nilai yang akan dicetak.
 
 ## digitalRead()
 Fungsi ```digitalRead()``` digunakan untuk membaca data **HIGH (1)** atau **LOW (0)** dari pin digital.
@@ -63,4 +63,38 @@ Contoh:
 digitalRead(13);
 ```
 **Parameter :**
-* **pin :** Nomor pin Arduino Uno
+* **pin :** Nomor pin Arduino Uno.
+
+## analogRead()
+Fungsi ```analogRead()``` digunakan untuk membaca data analog dari pin analog, nilai yang dibaca dalam range 0 ~ 1023.
+```
+analogRead(pin)
+
+Contoh:
+analogRead(A0);
+```
+**Parameter :**
+* **pin :** Nomor pin Arduino Uno.
+
+## analogWrite()
+Fungsi ```analogWrite()``` digunakan untuk menulis sebuah nilai analog pada pin digital dengan cara digital atau biasa dikenal dengan **modulasi lebar pulsa (PWM)**.
+```
+analogWrite(pin, value)
+
+Contoh:
+analogWrite(13, 150);
+```
+**Parameter :**
+* **pin :** Nomor pin Arduino Uno.
+* **value :** Duty Cycle dengan range 0 ~ 255 (0 merepresentasikan tegangan 0V dan 255 merepresentasikan tegangan 5V).
+
+## delay()
+Fungsi ```delay``` digunakan untuk mem-pause program selama rentang waktu yang ditentukan.
+```
+delay(ms)
+
+Contoh:
+delay(1000); //mempause program selama 1000ms atau 1 detik
+```
+**Parameter :**
+* **ms :** Lama waktu untuk mempause program dalam milidetik.
