@@ -28,7 +28,7 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 
 #### A. GPIO sebagai Digital Output ([Link](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/A_GPIO%20sebagai%20Digital%20Output))
 1. [Menyalakan dan Menghidupkan LED 5mm](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/A_GPIO%20sebagai%20Digital%20Output/01_Menyalakan%20dan%20Mematikan%20LED%205mm)
-2. Loading.....
+2. Bermain-main dengan LED RGB (Red, Green, dan Blue)
 
 #### B. GPIO sebagai Digital Input
 1. Loading.....
