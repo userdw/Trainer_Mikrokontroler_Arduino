@@ -104,3 +104,47 @@ Berikut alat-alat yang kita butuhkan:
 2. Unduhh kode program [menyalakan_dan_mematikan_5_buah_led.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/01_Menyalakan%20dan%20Mematikan%20LED%205mm/menyalakan_dan_mematikan_5_buah_led.ino).
 3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
 4. Jika tidak ada kesalahan, maka 5 buah LED akan hidup dan mati secara bersamaan setiap 1 detik sekali.
+
+### Penjelasan Kode Sketch
+
+```
+#define pinLedSatu 6
+#define pinLedDua 5
+#define pinLedTiga 4
+#define pinLedEmpat 3
+#define pinLedLima 2
+```
+Instruksi di atas berguna untuk membuat variabel dengan nilai-nilai yang sesuai dengan pin yang akan kita gunakan sebagai digital output.
+
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(pinLedSatu, OUTPUT);
+  pinMode(pinLedDua, OUTPUT);
+  pinMode(pinLedTiga, OUTPUT);
+  pinMode(pinLedEmpat, OUTPUT);
+  pinMode(pinLedLima, OUTPUT);
+}
+```
+Instruksi di atas berguna untuk mengkonfigurasi pin-pin yang digunakan dijadikan sebagai digital output.
+
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(pinLedSatu, HIGH);
+  digitalWrite(pinLedDua, HIGH);
+  digitalWrite(pinLedTiga, HIGH);
+  digitalWrite(pinLedEmpat, HIGH);
+  digitalWrite(pinLedLima, HIGH);
+  delay(1000);
+  digitalWrite(pinLedSatu, LOW);
+  digitalWrite(pinLedDua, LOW);
+  digitalWrite(pinLedTiga, LOW);
+  digitalWrite(pinLedEmpat, LOW);
+  digitalWrite(pinLedLima, LOW);
+  delay(1000);
+}
+```
+Ini merupakan blok program utama yang berguna untuk menghidupkan dan mematikan 5 buah LED secara bersamaan setiap 1 detik sekali.
+
+Kita bisa mengedit sketch di atas sesuai dengan yang kita inginkan seperti menambah atau mengurangi waktu delay.
