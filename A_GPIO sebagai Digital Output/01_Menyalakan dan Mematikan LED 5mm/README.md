@@ -44,14 +44,15 @@ LED dapat bekerja dengan baik saat arus listrik yang melewatinya tidak lebih dar
 1. Ikuti seperti rangkaian di atas.
 2. Unduhh kode program [menyalakan_dan_mematikan_led.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/01_Menyalakan%20dan%20Mematikan%20LED%205mm/menyalakan_dan_mematikan_led.ino).
 3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
+4. Jika tidak ada kesalahan, maka LED akan hidup dan mati secara bergantian setiap 1 detik sekali.
 
-## Penjelasan Sketch
+## Penjelasan Kode Sketch
 
 ```
-#define ledPinMerah 2
+#define pinLedMerah 2
 ```
 
-Instruksi di atas berguna untuk membuat variabel bernama **ledPinMerah** dengan memiliki nilai 2, yang mewakili nomor pin digital yang kita gunakan.
+Instruksi di atas berguna untuk membuat variabel bernama **pinLedMerah** dengan memiliki nilai 2, yang mewakili nomor pin digital yang kita gunakan.
 
 ```
 void setup() {
@@ -61,3 +62,22 @@ void setup() {
 ```
 
 Instruksi ini **pinMode(pinLedMerah, OUTPUT)** digunakan untuk menkonfigurasi pin nomor 2 dijadikan sebagai digital output.
+
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(pinLedMerah, HIGH);
+  delay(1000);
+  digitalWrite(pinLedMerah, LOW);
+  delay(1000);
+}
+```
+
+Ini merupakan blok program utama yang berguna untuk menghidupkan dan mematikan LED secara bergantian setiap 1 detik sekali.
+* Instruksi **digitalWrite(pinLedMerah, HIGH)** berguna untuk membuat pin digital nomor 2 mengeluarkan tegangan sebesar 5V.
+* **delay(1000)** berguna untuk mendelay atau mempause program selama 1 detik.
+* **digitalWrite(pinLedMerah, LOW)** berguna untuk membuat pin digital nomor 2 mengeluarkan tegangan sebesar 0V.
+* **delay(1000)** berguna untuk mendelay atau mempause program selama 1 detik.
+
+
+
