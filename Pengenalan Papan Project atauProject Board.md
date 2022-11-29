@@ -10,8 +10,4 @@ Gambar di atas merupakan bentuk dari **project board** dengan total titik sebany
 
 Papan project terdiri dari 2 bagian, yaitu bagian **vertical dan horizontal**, yang dapat dilihat pada gambar di bawah ini.
 
-<p align="center">
-<img src="/Gambar/project-board-2.png" height="400">
-</p>
-
 Pada bagian horizontal terdapat 2 bagian titik yang diberi label **tanda positif (+)** dan **tanda negatif (-)** yang ditandai dengan warna hijau dan kuning. Pada titik-titik yang diberi tanda warna garis hijau itu semua titiknya menyambung begitu juga dengan titik-titik yang diberi tanda garis warna kuning. Namun, titik-titik pada garis hijau dan garis kuning tidak menyambung.
