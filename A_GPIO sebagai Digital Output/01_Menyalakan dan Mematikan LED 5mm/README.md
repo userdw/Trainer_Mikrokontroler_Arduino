@@ -1,4 +1,4 @@
-# Menyalakan dan Mematikan LED
+# Menyalakan dan Mematikan 1 Buah LED
 
 Pada proyek ini kita akan memanfaatkan GPIO pada Arduino Uno sebagai output. Karena dijadikan sebagai output, nantinya pin yang kita jadikan output akan dapat mengeluarkan data digital/tegangan yang nilainya hanya 2, yaitu **High (1/5V)** dan **Low (0/0V)**.
 
@@ -30,7 +30,7 @@ LED (Light Emiting Diode) merupakan komponen elektronika yang mengubah energi li
 
 LED dapat bekerja dengan baik saat arus listrik yang melewatinya tidak lebih dari 20mA, jika lebih dapat berpeluang merusak komponen LED itu sendiri sehingga dalam penggunaannya LED harus diseri dengan sebuah resistor untuk membatasi arus listrik yang melewatinya.
 
-## Percobaan
+### Percobaan
 
 <p align="center">
 <img src="/Gambar/gpio-output-led.png" height="500">
@@ -46,7 +46,7 @@ LED dapat bekerja dengan baik saat arus listrik yang melewatinya tidak lebih dar
 3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
 4. Jika tidak ada kesalahan, maka LED akan hidup dan mati secara bergantian setiap 1 detik sekali.
 
-## Penjelasan Kode Sketch
+### Penjelasan Kode Sketch
 
 ```
 #define pinLedMerah 2
@@ -79,5 +79,28 @@ Ini merupakan blok program utama yang berguna untuk menghidupkan dan mematikan L
 * **digitalWrite(pinLedMerah, LOW)** berguna untuk membuat pin digital nomor 2 mengeluarkan tegangan sebesar 0V.
 * **delay(1000)** berguna untuk mendelay atau mempause program selama 1 detik.
 
+Kita bisa mengedit sketch di atas sesuai yang kita inginkan seperti menambah atau mengurangi waktu delay.
 
+## Menyalakan dan Mematikan 5 Buah LED
 
+Setelah kita belajar menghidupkan dan mematikan 1 buah LED, sekarang kita akan belajar untuk memcoba menghidupkan dan mematikan lebih dari 1 LED. Berarti kita akan membutuhkan 5 buah pin GPIO yang akan kita jadikan sebagai digital output.
+
+Pin-pin yang kita gunakan ```Pin 2, 3, 4, 5, dan 6```.
+
+Berikut alat-alat yang kita butuhkan:
+* 1x Arduino Uno
+* 5x Resistor 1k Ohm
+* 5x LED Merah 
+* 9x Kabel Jumper Male to Male
+
+### Percobaan
+
+<p align="center">
+<img src="/Gambar/rangkaian-gpio-output-led-2.png" height="500">
+</p>
+
+**Langkah-Langkahnya:**
+1. Ikuti seperti rangkaian di atas.
+2. Unduhh kode program [menyalakan_dan_mematikan_5_buah_led.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/01_Menyalakan%20dan%20Mematikan%20LED%205mm/menyalakan_dan_mematikan_5_buah_led.ino).
+3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
+4. Jika tidak ada kesalahan, maka 5 buah LED akan hidup dan mati secara bersamaan setiap 1 detik sekali.
