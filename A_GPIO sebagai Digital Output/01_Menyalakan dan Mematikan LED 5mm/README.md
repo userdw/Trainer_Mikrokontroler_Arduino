@@ -32,12 +32,32 @@ LED dapat bekerja dengan baik saat arus listrik yang melewatinya tidak lebih dar
 
 ## Percobaan
 
-Untuk hubungan komponennya bisa dilihat seperti gambar di bawah ini:
-
 <p align="center">
 <img src="/Gambar/gpio-output-led.png" height="500">
 </p>
 
+<p align="center">
+<img src="/Gambar/rangkaian-gpio-output-led.png" height="400">
+</p>
 
+**Langkah-Langkahnya:**
+1. Ikuti seperti rangkaian di atas.
+2. Unduhh kode program [menyalakan_dan_mematikan_led.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/01_Menyalakan%20dan%20Mematikan%20LED%205mm/menyalakan_dan_mematikan_led.ino).
+3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
 
-Pin yang kita gunakan adalah pin nomor 2, kita jadikan dia sebagai output untuk menyalakan dan mematikan LED.
+## Penjelasan Sketch
+
+```
+#define ledPinMerah 2
+```
+
+Instruksi di atas berguna untuk membuat variabel bernama **ledPinMerah** dengan memiliki nilai 2, yang mewakili nomor pin digital yang kita gunakan.
+
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(pinLedMerah, OUTPUT);
+}
+```
+
+Instruksi ini **pinMode(pinLedMerah, OUTPUT)** digunakan untuk menkonfigurasi pin nomor 2 dijadikan sebagai digital output.
