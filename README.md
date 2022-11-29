@@ -8,19 +8,19 @@ Roadmap dibawah ini disusun secara terstruktur dengan tujuan untuk mempermudah p
 
 Bagian ini kita akan berkenalan dengan board Arduino Uno mulai dari digital input, output, analog input, cara memperogramnya, dan sebagainya.
 
-[Link Akses](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Pengenalan%20Arduino%20Uno.md)
+**[Link Akses](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Pengenalan%20Arduino%20Uno.md)**
 
 ## 2. Arduino IDE Commands Sheet
 
 Pada bagian ini kita akan mempelajari beberapa fungsi program yang ada pada ekosistem Arduino.
 
-[Link Akses](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Arduino%20IDE%20Commands%20Cheat%20Sheet.md)
+**[Link Akses](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Arduino%20IDE%20Commands%20Cheat%20Sheet.md)**
 
 ## 3. Project Board
 
 Pada bagian ini kita akan mempelajari bagian-bagian dari papan project atau project board.
 
-Link Akses
+**Link Akses**
 
 ## 4. Proyek-Proyek Mikrokontroler Arduino
 
