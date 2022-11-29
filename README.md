@@ -20,11 +20,11 @@ Pada bagian ini kita akan mempelajari beberapa fungsi program yang ada pada ekos
 
 Pada bagian ini kita akan mempelajari bagian-bagian dari papan project atau project board.
 
-**Link Akses**
+**[Link Akses](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Pengenalan%20Papan%20Project%20atauProject%20Board.md)**
 
 ## 4. Proyek-Proyek Mikrokontroler Arduino
 
-Setelah mencoba contoh program blink di atas, sekarang kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPIO baik sebagai input maupun output yang akan kita hubungkan dengan komponen-komponen elektronika yang bisa diikuti di bawah ini:
+Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPIO baik sebagai input maupun output yang akan kita hubungkan dengan komponen-komponen elektronika yang bisa diikuti di bawah ini:
 
 #### A. GPIO sebagai Digital Output ([Link](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/A_GPIO%20sebagai%20Digital%20Output))
 1. [Menyalakan dan Menghidupkan LED 5mm](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/A_GPIO%20sebagai%20Digital%20Output/01_Menyalakan%20dan%20Mematikan%20LED%205mm)
