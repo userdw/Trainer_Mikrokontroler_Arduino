@@ -25,6 +25,32 @@ Sekarang kita akan mencoba membuat bunyi dari buzzer ini dengan menggunakan Ardu
 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti gambar di atas, pin PWM yang kita gunakan adalah pin digital nomor 5
-2. Unduhh kode program [pwm_led.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/02_Mengakses%20Fitur%20Pulse%20Width%20Modulation%20(PWM)/pwm_led.ino).
+2. Unduhh kode program [membunyikan_buzzer.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/04_Membuat%20Bunyi%20Beep-Beep%20dengan%20Buzzer/membunyikan_buzzer.ino).
 3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
-4. Jika tidak ada kesalahan, maka LED merah akan semakin redup sedangkan LED kuning akan semakin terang.
+4. Jika tidak ada kesalahan, maka Buzzer akan bergantian bunyi dan diam setiap 1 detik sekali.
+
+### Penjelasan Kode Sketch
+
+```
+#define pinBuzzer 3
+```
+Instruksi di atas digunakan untuk membuat variabel bernama pinBuzzer dengan nilai 3 yang merepresentasikan nomor pin digital Arduino Uno.
+
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(pinBuzzer, OUTPUT);
+}
+```
+Instruksi di atas digunakan untuk mengkonfigurasi pin nomor 3 dijadikan sebagai digital output.
+
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(pinBuzzer, HIGH);
+  delay(1000);
+  digitalWrite(pinBuzzer, LOW);
+  delay(1000);
+}
+```
+Instruksi di atas digunakan untuk membuat Buzzer saling bergantian berbunyi dan diam setiap 1 detik sekali.
