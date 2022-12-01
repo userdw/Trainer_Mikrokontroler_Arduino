@@ -8,3 +8,29 @@ LED RGB terdiri dari 2 jenis, yaitu **Common Cathode** dan **Common Anode**. Kom
 <img src="/Gambar/led-rgb.jpg" height="250">
 </p>
 
+LED RGB berjenis common anoda untuk kaki positifnya harus terhubung dengan pin 5V dari Arduino Uno. Sedangkan untuk kaki warnanya terhubung dengan pin digital Arduino Uno, namun sebelum itu kita tetap harus menseri tiap kakinya dengan sebuah resistor agar arus listrik yang mengalir pada masing-masing kakinya tidak besar yang dapat merusak komponen tersebut.
+
+Ketika kita ingin menampilkan warna merah, maka hal yang harus kita lakukan adalah dengan membuat arus listrik mengalir dari kutub positif menuju ke kaki merah lalu menuju ke kutub negatif. 
+
+Jadi, logikanya kita harus membuat pin digital yang terhubung dengan kaki merah harus kita kondisikan bertegangan LOW (0V) sedangkan untuk kaki lainnya kita kondisikan bertegangan HIGH (5V) sehingga nanti LED RGB akan menampilkan warna merah, begitu juga kalau ingin menampilkan warna biru maupun hijau.
+
+Selain menampilkan warna merah, biru, dan hijau, kita juga bisa membuat warna lain dengan mencampurkan ketiga warna tersebut, misalnya kita mencampurkan warna merah, biru, dan hijau nanti akan menjadi warna putih misalnya.
+
+<p align="center">
+<img src="/Gambar/rangkaian-led-rgb.png" height="500">
+</p>
+
+**Pin-pin yang kita gunakan :**
+* **Kaki Positif :** Hubungkan ke 5V.
+* **Kaki Merah :** Diseri dengan resistor lalu hubungkan ke pin digital nomor 2.
+* **Kaki Hijau :** Diseri dengan resistor lalu hubungkan ke pin digital nomor 3.
+* **Kaki Biru :** Diseri dengan resistor lalu hubungkan ke pin digital nomor 4.
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti gambar di atas.
+2. Unduhh kode program [led_rgb.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/03_Bermain-main%20dengan%20LED%20RGB%20(Red%2C%20Green%2C%20dan%20Blue)/led_rgb.ino).
+3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
+4. Jika tidak ada kesalahan, maka LED RGB akan menyala bergantian dari warna merah, hijau, dan biru.
+
+### Penjelasan Kode Sketch
+
