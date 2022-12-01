@@ -16,6 +16,14 @@ Jadi, logikanya kita harus membuat pin digital yang terhubung dengan kaki merah 
 
 Selain menampilkan warna merah, biru, dan hijau, kita juga bisa membuat warna lain dengan mencampurkan ketiga warna tersebut, misalnya kita mencampurkan warna merah, biru, dan hijau nanti akan menjadi warna putih misalnya.
 
+Sekarang kita akan mencoba mencoba LED RGB dengan GPIO output Arduino Uno.
+
+**Bahan-bahan yang dibutuhkan :**
+* 1x Arduino Uno
+* 3x Resistor 220 Ohm
+* 1x LED RGB
+* 6x Kabel Jumper Male to Male
+
 <p align="center">
 <img src="/Gambar/rangkaian-led-rgb.png" height="500">
 </p>
