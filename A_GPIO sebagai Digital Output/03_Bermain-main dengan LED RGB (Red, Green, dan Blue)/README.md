@@ -73,3 +73,6 @@ void loop() {
 ```
 Instruksi di atas berfungsi untuk membuat LED RGB menyala warna merah, hijau, dan biru secara bergantian.
 * **warnaRGB(LOW, HIGH, HIGH);** fungsi warnaRGB memiliki tiga inputan ```LOW, HIGH, HIGH``` yang dimana ketiga nilai digital ini akan dijadikan nilai dari variabel logikaMerah, logikaHijau, dan logikaBiru. Pada fungsi ini berdasarkan inputannya, maka variabel ```logikaMerah akan bernilai LOW```, ```logikaHijau bernilai HIGH```, dan ```logikaBiru bernilai HIGH``` sehingga akan membuat LED RGB akan menghasilkan warna merah.
+
+Dengan mengganti nilai dari warnaRGB(), kita bisa mendapatkan beragam warna dari percampuran 3 warna dasar yang ada pada LED RGB.
+
