@@ -34,3 +34,42 @@ Selain menampilkan warna merah, biru, dan hijau, kita juga bisa membuat warna la
 
 ### Penjelasan Kode Sketch
 
+```
+#define ledMerah 2
+#define ledHijau 3
+#define ledBiru 4
+```
+Instruksi di atas berguna untuk membuat variabel yang bernama **ledMerah**, **ledHijau**, dan **ledBiru**.
+
+```
+void warnaRGB(bool logikaMerah, bool logikaHijau, bool logikaBiru){
+  digitalWrite(ledMerah, logikaMerah);
+  digitalWrite(ledHijau, logikaHijau);
+  digitalWrite(ledBiru, logikaBiru);
+}
+```
+Di atas merupakan fungsi warnaRGB() yang memiliki input dengan nama variabel logikaMerah, logikaHijau, dan logikaBiru. Dimana variabel ini bertipe data bool (tipe data logika), yang bernama bisa bernilai **True (1) atau False (0)**.
+
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(ledMerah, OUTPUT);
+  pinMode(ledHijau, OUTPUT);
+  pinMode(ledBiru, OUTPUT);
+}
+```
+Instruksi di atas digunakan untuk mengkonfigurasi pin-pin yang digunakan sebagai output.
+
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  warnaRGB(LOW, HIGH, HIGH);
+  delay(1000);
+  warnaRGB(HIGH, LOW, HIGH);
+  delay(1000);
+  warnaRGB(HIGH, HIGH, LOW);
+  delay(1000);
+}
+```
+Instruksi di atas berfungsi untuk membuat LED RGB menyala warna merah, hijau, dan biru secara bergantian.
+* **warnaRGB(LOW, HIGH, HIGH);** fungsi warnaRGB memiliki tiga inputan ```LOW, HIGH, HIGH``` yang dimana ketiga nilai digital ini akan dijadikan nilai dari variabel logikaMerah, logikaHijau, dan logikaBiru. Pada fungsi ini berdasarkan inputannya, maka variabel ```logikaMerah akan bernilai LOW```, ```logikaHijau bernilai HIGH```, dan ```logikaBiru bernilai HIGH``` sehingga akan membuat LED RGB akan menghasilkan warna merah.
