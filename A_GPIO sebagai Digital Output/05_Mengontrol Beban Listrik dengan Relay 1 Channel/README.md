@@ -26,8 +26,47 @@ Sekarang kita akan mencoba mengendalikan beban listrik dengan Relay menggunakan 
 </p>
 
 **Langkah-langkahnya :**
-1. Ikuti rangkaian seperti gambar di atas, pin PWM yang kita gunakan adalah pin digital nomor 5
-2. Unduhh kode program [membunyikan_buzzer.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/04_Membuat%20Bunyi%20Beep-Beep%20dengan%20Buzzer/membunyikan_buzzer.ino).
+1. Ikuti rangkaian seperti gambar di atas, pin yang kita gunakan adalah pin digital nomor 3
+2. Unduhh kode program [kontrol_beban_listrik_relay.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/A_GPIO%20sebagai%20Digital%20Output/05_Mengontrol%20Beban%20Listrik%20dengan%20Relay%201%20Channel/kontrol_beban_listrik_relay.ino).
 3. Setelah terunduh, silahkan buka software Arduino IDE lalu klik upload ke board Arduino Uno.
 4. Jika tidak ada kesalahan, maka Buzzer akan bergantian bunyi dan diam setiap 1 detik sekali.
 
+**Perhatian :** Modul relay yang kita gunakan itu berjenis **aktif low**, jadi untuk mengubah kondisi kontaknya kita hanya perlu mengirimkan **sinyal logika LOW (0V)** dari pin Arduino Uno ke pin **IN** dari modul relay yang kita gunakan.
+
+### Penjelasan Kode Sketch
+
+```
+#define pinRelay 3
+```
+Instruksi di atas digunakan untuk membuat variabel bernama pinRelay dengan nilai 3 yang merepresentasikan nomor pin digital Arduino Uno.
+
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(pinRelay, OUTPUT);
+  digitalWrite(pinRelay, HIGH);
+}
+```
+Instruksi di atas digunakan untuk mengkonfigurasi pin nomor 3 dijadikan sebagai digital output dan juga mengatur pada saat kondisi awal, relay dalam kondisi **tidak aktif** karena kita mengirimkan **logika HIGH** pada kaki **IN** di modul relay.
+
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(pinRelay, LOW);
+}
+```
+Instruksi di atas digunakan untuk membuat modul relay **menjadi aktif** karena kita mengirimkan sinyal **berlogika LOW** pada pin **IN**nya sehingga akan mengaktifkan relay. Sehingga LED akan menyala karena kontak NO terhubung dengan COM dimana pada COM kita hubungkan dengan tegangan 5V sehingga akan mengalir arus listrik dari COM ke NO yang kemudian ke LED dan berakhir di GND.
+
+### Modifikasi Kode Sketch
+
+Sekarang kita akan mencoba memodifikasi kode sketch untuk menghidupkan dan mematikan relay (Blink) sehingga nantinya LED akan menyala dan mati bergantian dengan selang interval 1 detik. Coba ganti pada bagian **void loop()** dengan sketch di bawah ini:
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(pinRelay, LOW);
+  delay(1000);
+  digitalWrite(pinRelay, HIGH);
+  delay(1000);
+}
+```
+Jika sketch di atas dijalankan, maka LED akan menyala dan mati bergantian selama 1 detik.
