@@ -19,6 +19,8 @@ Sekarang kita akan mencoba mengendalikan beban listrik dengan Relay menggunakan 
 **Bahan-bahan yang dibutuhkan :**
 * 1x Arduino Uno
 * 1x Relay 1 Channel
+* 1x Projectboard
+* 3x Kabel Jumper Male to Female
 * 4x Kabel Jumper Male to Male
 
 <p align="center">
