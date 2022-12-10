@@ -1,6 +1,0 @@
-Hudiyono
-Hadiyono
-
-LED RGB merupakan komponen elektronika yang mengubah energi listrik menjadi cahaya sama seperti dengan LED. Namun, LED RGB memiliki karakteristik yang unik, karena komponen ini mampu menampilkan jumlah warna yang banyak dengan menggunakan kombinasi campuran 3 warna dasar, yaitu merah (Red), hijau (Green), dan biru (Blue) sehingga komponen ini disebut dengan LED RGB.
-
-LED RGB terdiri dari 2 jenis, yaitu **Common Cathode** dan **Common Anode**. Komponen ini memiliki 4 kaki, dimana untuk common cathode terdapat **3 kaki positif untuk warna merah (R), hijau (G), biru (B) dan 1 kaki negatif**. Sedangkan untuk common anode terdapat **3 kaki negatif untuk warna merah (R), hijau (G), biru (B) dan 1 kaki positif**. Pada trainer kit ini, kita akan mencoba LED RGB berjenis common anoda.
