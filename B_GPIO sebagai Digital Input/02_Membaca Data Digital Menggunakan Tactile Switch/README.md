@@ -155,7 +155,21 @@ Sekarang kita akan mencoba dengan **resistor pull-down**, untuk konfigurasi ini 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
 2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
-3. Unduh kode program [input_pullup.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/B_GPIO%20sebagai%20Digital%20Input/02_Membaca%20Data%20Digital%20Menggunakan%20Tactile%20Switch/input_pullup.ino).
+3. Unduh kode program [input_saja.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/B_GPIO%20sebagai%20Digital%20Input/02_Membaca%20Data%20Digital%20Menggunakan%20Tactile%20Switch/input_saja.ino).
 4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
 5. Jangan lupa untuk memilih baudrate sebesar 9600.
 6. Coba amati saat tombolnya ditekan dan tidak ditekan.
+
+<p align="center">
+<img src="/Gambar/input-pulldown-tidak-ditekan.png" height="450">
+</p>
+
+Gambar di atas kondisi saat tombol tidak kita tekan, Arduino Uno membaca data **0/0V/LOW**.
+
+<p align="center">
+<img src="/Gambar/input-pulldown-ditekan.png" height="450">
+</p>
+
+Gambar di atas kondisi saat tombol kita tekan, Arduino Uno membaca data **1/5V/HIGH**.
+
+**Kesimpulan :** Saat dengan konfigurasi **resistor pull-down** saat tombol tidak kita tekan, maka Arduino Uno akan membaca logika 0/LOW sedangkan saat kita tekan, maka Arduino Uno akan membaca data 1/HIGH sehingga kondisi floating atau mengambang sudah teratasi dengan baik.
