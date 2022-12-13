@@ -36,7 +36,7 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 5. [Mengendalikan Beban Listrik Menggunakan Modul Relay 1 Channel](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/A_GPIO%20sebagai%20Digital%20Output/05_Mengontrol%20Beban%20Listrik%20dengan%20Relay%201%20Channel)
 
 #### B. GPIO sebagai Digital Input
-1. Yuk, Kenalan dengan Fitur Serial Monitor 
+1. [Yuk, Kenalan dengan Fitur Serial Monitor](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/01_Kenalan%20dengan%20Serial%20Monitor) 
 
 #### C. GPIO sebagai Analog Input
 1. Loading.....
