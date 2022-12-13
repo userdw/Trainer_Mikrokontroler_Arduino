@@ -17,8 +17,27 @@ Pada bagian sebelumnya, kita telah belajar bagaimana cara membaca data digital m
 </p>
 
 **Langkah-langkahnya :**
-1. Hubungkan board Arduino Uno ke port USB komputer.
-2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
-3. Unduh kode program [kirim_data_serial_ke_komputer.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/B_GPIO%20sebagai%20Digital%20Input/01_Kenalan%20dengan%20Serial%20Monitor/kirim_data_serial_ke_komputer.ino).
-4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
-5. Jangan lupa untuk memilih baudrate sebesar 9600.
+1. Ikuti rangkaian di atas.
+2. Hubungkan board Arduino Uno ke port USB komputer.
+3. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+4. Unduh kode program [menghidupkan_dan_mematikan_led_dengan_tactile_switch.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/B_GPIO%20sebagai%20Digital%20Input/03_Menghidupkan%20dan%20Mematikan%20LED%20dengan%20Tactile%20Switch/menghidupkan_dan_mematikan_LED_dengan_Tactile_Switch.ino).
+5. Upload kode sketch tersebut.
+
+Jika sketch sudah terupload dengan benar, maka saat kita menekan tombol tactile switch, maka LED akan menyala. Sedangkan jika kita tidak menekan tombol tactile switchnya, maka LED akan mati.
+
+### Penjelasan Kode Sketch
+
+```
+#define pinPushButton 4
+#define pinLED 5
+```
+Instruksi di atas digunakan untuk membuat variabel bernama **pinPushButton** dan **pinLED** yang masing-masing memiliki nilai 4 dan 5 yang mempresentasikan nomor pin digital yang digunakan.
+
+```
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(pinPushButton, INPUT);
+  pinMode(pinLED, OUTPUT);
+}
+```
+Instruksi di atas digunakan untuk mengkonfiguasi **pinPushButton** sebagai input dan **pinLED** sebagai output.
