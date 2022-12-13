@@ -139,5 +139,23 @@ Instruksi di atas :
 
 ## Dengan Resistor Pull-Down
 
+Sekarang kita akan mencoba dengan **resistor pull-down**, untuk konfigurasi ini kita hanya bisa melakukannya melalui hardware. Karena pada Arduino Uno hanya dilengkapi dengan internal resistor pull-up saja sehingga untuk konfigurasi resistor pull-down tidak bisa kita lakukan melalui software.
 
+**Bahan-bahan yang Dibutuhkan :**
+* 1x Arduino Uno dan Kabel USB
+* 1x Tactile Switch
+* 1x Project Board
+* 1x Resistor 10k Ohm
+* Beberapa Kabel Jumper Male to Male
 
+<p align="center">
+<img src="/Gambar/rangkaian-input-pb-resistor-pulldown.png" height="500">
+</p>
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [input_pullup.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/B_GPIO%20sebagai%20Digital%20Input/02_Membaca%20Data%20Digital%20Menggunakan%20Tactile%20Switch/input_pullup.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+6. Coba amati saat tombolnya ditekan dan tidak ditekan.
