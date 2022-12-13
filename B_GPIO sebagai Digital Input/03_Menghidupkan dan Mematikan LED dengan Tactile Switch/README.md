@@ -41,3 +41,21 @@ void setup() {
 }
 ```
 Instruksi di atas digunakan untuk mengkonfiguasi **pinPushButton** sebagai input dan **pinLED** sebagai output.
+
+```
+void loop() {
+  // put your main code here, to run repeatedly:
+  bool baca_pb = digitalRead(pinPushButton);
+  if(baca_pb == HIGH){
+    digitalWrite(pinLED, HIGH);
+  }
+  else{
+    digitalWrite(pinLED, LOW);
+  }
+}
+```
+Instruksi di atas jika **baca_pb** bernilai HIGH/1, maka lampu LED akan menyala. Sedangkan, jika **baca_pb** bernilai LOW/0, maka LED akan mati.
+
+## Menghidupkan dan Mematikan 3 Buah LED dengan 3 Buah Tactile Switch
+
+
