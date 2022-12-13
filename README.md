@@ -37,6 +37,8 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 
 #### B. GPIO sebagai Digital Input
 1. [Yuk, Kenalan dengan Fitur Serial Monitor](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/01_Kenalan%20dengan%20Serial%20Monitor) 
+2. [Membaca Data Digital Menggunakan Tactile Switch](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/02_Membaca%20Data%20Digital%20Menggunakan%20Tactile%20Switch)
+3. Menghidupkan dan Mematikan LED dengan Tactile Switch
 
 #### C. GPIO sebagai Analog Input
 1. Loading.....
