@@ -15,5 +15,7 @@ Kebalikannya, jika kita pengaruhi di sekitar saklar dengan medan magnet (yang di
 * 1x Arduino dan Kabel USB
 * 1x Project Board
 
-
+<p align="center">
+<img src="/Gambar/rangkaian-reed-magnetic-pull-down.png" height="500">
+</p>
 
