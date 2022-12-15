@@ -40,7 +40,7 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 2. [Membaca Data Digital Menggunakan Tactile Switch](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/02_Membaca%20Data%20Digital%20Menggunakan%20Tactile%20Switch)
 3. [Menghidupkan dan Mematikan LED dengan Tactile Switch](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/03_Menghidupkan%20dan%20Mematikan%20LED%20dengan%20Tactile%20Switch)
 4. [Limit Switch untuk Membaca Data Digital](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/04_Limit%20Switch%20untuk%20Membaca%20Data%20Digital)
-5. [Membuat Alarm dengan Saklar Reed Magnetic Sensor]
+5. [Membuat Alarm dengan Saklar Reed Magnetic Sensor](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/05_Membuat%20Alarm%20dengan%20Saklar%20Reed%20Magnetic%20Sensor)
 
 #### C. GPIO sebagai Analog Input
 1. Loading.....
