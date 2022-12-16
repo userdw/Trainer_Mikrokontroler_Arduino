@@ -19,3 +19,14 @@ Kebalikannya, jika kita pengaruhi di sekitar saklar dengan medan magnet (yang di
 <img src="/Gambar/rangkaian-reed-magnetic-pull-down.png" height="500">
 </p>
 
+**Langkah-langkahnya :**
+1. Ikuti rangkaian di atas.
+2. Hubungkan board Arduino Uno ke port USB komputer.
+3. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+4. Unduh kode program [reed_magnetic_pull_down.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/B_GPIO%20sebagai%20Digital%20Input/05_Membuat%20Alarm%20dengan%20Saklar%20Reed%20Magnetic%20Sensor/reed_magnetic_pull_down.ino).
+5. Upload kode sketch tersebut.
+
+Jika sketch sudah terupload dengan benar, maka saat saklar tidak kita dekatkan dengan benda magnetik (benda yang menghasilkan medan magnet), maka kontak NO tidak terhubung dengan C (kontak terputus) sehingga data yang dibaca oleh Arduino Uno kita adalah **LOW/0/0V**.
+
+## Menggunakan Internal Resistor Pull-Up
+
