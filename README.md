@@ -45,7 +45,7 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 #### C. GPIO sebagai Analog Input
 1. [Apa itu Analog to Digital Converter (ADC) ?](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/C_Analog%20Input/01_Apa%20itu%20Analog%20to%20Digital%20Converter%20(ADC))
 2. [Membaca Data Analog Menggunakan Potensiometer](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/C_Analog%20Input/02_Baca%20Data%20Analog%20menggunakan%20Potensiometer)
-3. Mengatur Tingkat Kecerahan LED dengan Potensiometer
+3. [Mengatur Tingkat Kecerahan LED dengan Potensiometer](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/C_Analog%20Input/03_Mengatur%20Tingkat%20Kecerahan%20LED%20dengan%20Potensiometer)
 4. Mengukur Tingkat Kecerahan Cahaya Menggunakan Sensor LDR 
 
 
