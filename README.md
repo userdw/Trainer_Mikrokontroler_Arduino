@@ -43,8 +43,8 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 5. [Membuat Alarm dengan Saklar Reed Magnetic Sensor](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/B_GPIO%20sebagai%20Digital%20Input/05_Membuat%20Alarm%20dengan%20Saklar%20Reed%20Magnetic%20Sensor)
 
 #### C. GPIO sebagai Analog Input
-1. Apa itu Analog to Digital Converter (ADC) ?
-2. Membaca Data Analog Menggunakan Potensiometer
+1. [Apa itu Analog to Digital Converter (ADC) ?](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/C_Analog%20Input/01_Apa%20itu%20Analog%20to%20Digital%20Converter%20(ADC))
+2. [Membaca Data Analog Menggunakan Potensiometer](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/C_Analog%20Input/02_Baca%20Data%20Analog%20menggunakan%20Potensiometer)
 3. Mengatur Tingkat Kecerahan LED dengan Potensiometer
 4. Mengukur Tingkat Kecerahan Cahaya Menggunakan Sensor LDR 
 
