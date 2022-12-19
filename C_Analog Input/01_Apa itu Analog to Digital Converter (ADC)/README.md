@@ -4,6 +4,18 @@ Arduino Uno maupun semua perangkat komputer yang ada dalam kehidupan kita semuan
 
 Dalam kehidupan kita sehari-hari, data yang ada di lingkungan kita itu tidak hanya data digital, melainkan ada juga data analog.
 
+Data digital mengacu pada nilai **amplitudo diskrit**, amplitudo terbatas pada sejumlah nilai yang terbatas. Sinyal digital memiliki **dua kondisi: LOW (0V) untuk 0; HIGH (5V) untuk 1**.
+
+<p align="center">
+<img src="/Gambar/sinyal-digital.png" height="250">
+</p>
+
+Data analog memiliki sinyal bervariasi secara terus menerus dalam waktu dan nilai, dan amplitudo, frekuensi, atau fase sinyal berubah secara terus menerus setiap saat. Sinyal analog memiliki gelombang sinus dan segitiga gelombang dan sebagainya.
+
+<p align="center">
+<img src="/Gambar/sinyal-analog.png" height="250">
+</p>
+
 Sehingga agar data analog dapat diproses menggunakan perangkat digital salah satunya Arduino Uno, maka dibutuhkan perangkat **Analog to Digital Converter (ADC)**, yang dapat mengubah data analog menjadi data digital 1 (HIGH) dan 0 (LOW).
 
 Beberapa contoh data analog di sekitar kita itu seperti suara, intensitas cahaya, suhu, dan lain sebagainya. 
