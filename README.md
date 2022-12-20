@@ -48,7 +48,7 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 3. [Mengatur Tingkat Kecerahan LED dengan Potensiometer](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/C_Analog%20Input/03_Mengatur%20Tingkat%20Kecerahan%20LED%20dengan%20Potensiometer)
 
 #### D. Belajar Menggunakan Sensor
-1. Mengetahui Suhu dan Kelembapan Lingkungan dengan Sensor DHT11
+1. [Mengetahui Suhu dan Kelembapan Lingkungan dengan Sensor DHT11](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/D_Belajar%20Menggunakan%20Sensor/01_Mengetahui%20Suhu%20dan%20Kelembapan%20Lingkungan%20dengan%20Sensor%20DHT11)
 2. Mengukur Tingkat Intensitas Cahaya dengan Sensor LDR
 3. Mengetahui Jarak Benda Menggunakan Sensor Ultrasonic
 4. Membaca Data Remot dengan Sensor Infrared
