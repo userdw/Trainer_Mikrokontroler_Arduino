@@ -37,6 +37,14 @@ Selain itu, modul ini juga dilengkapi dengan LED indikator untuk output digitaln
 <img src="/Gambar/rangkaian-sensor-ldr-digital.png" height="450">
 </p>
 
+**Konfigurasi Pin :**
+
+| Sensor LDR  | Arduino Uno |
+| ------------- | ------------- |
+| DO  | D5  |
+| GND | GND  |
+| VCC | 5V  |
+
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
 2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
@@ -62,6 +70,14 @@ Setelah kita mencoba keluaran data digital dari sensor LDR, sekarang kita akan m
 <p align="center">
 <img src="/Gambar/rangkaian-sensor-ldr-analog.png" height="450">
 </p>
+
+**Konfigurasi Pin :**
+
+| Sensor LDR  | Arduino Uno |
+| ------------- | ------------- |
+| AO  | A0  |
+| GND | GND  |
+| VCC | 5V  |
 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
@@ -89,6 +105,18 @@ Data digital dan analog yang sudah kita dapatkan di atas bisa kita manfaatkan un
 <p align="center">
 <img src="/Gambar/rangkaian-sensor-ldr-led-digital-2.png" height="450">
 </p>
+
+**Konfigurasi Pin :**
+
+| Sensor LDR  | Arduino Uno | LED Merah | LED Hijau | Resistor (LED Merah) |Resistor (LED Hijau) |
+| ------------- | ------------- | ------------- | ------------- | ------------- |------------- |
+| AO  | A0 | - | - | - | - |
+| GND | GND | Katoda (-) | Katoda (-) | - | - |
+| VCC | 5V | - |- |-|-|
+| - | D4 | - |- | Kaki (+) | - |
+| - | D3 | - | - |- |Kaki (+) |
+| - | - | Anoda (+) | - |Kaki (-) |- |
+| - | - | - | Anoda (+) |- |Kaki (-) |
 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
@@ -138,6 +166,20 @@ Instruksi di atas merupakan seleksi kontrol menggunakan if, jadi saat kondisi ba
 <p align="center">
 <img src="/Gambar/rangkaian-sensor-ldr-led-analog.png" height="450">
 </p>
+
+**Konfigurasi Pin :**
+
+| Sensor LDR  | Arduino Uno |
+| ------------- | ------------- |
+| AO  | A0  |
+| GND | GND  |
+| VCC | 5V  |
+
+| Resistor  | Arduino Uno | LED |
+| ------------- | ------------- | ------------- |
+| Kaki (+)  | D4  | -  |
+| -  | GND  | Katoda (-)  |
+| Kaki (-) | -  | Anoda (+)  |
 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
