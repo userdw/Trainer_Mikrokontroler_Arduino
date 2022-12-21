@@ -15,7 +15,7 @@ Bagian pemancar akan menghasilkan gelombang ultrasonik sehingga jika ada obyek p
 Pada bagian ini kita akan belajar menggunakan sensor ultrasonik dengan tipe **HC-SR04**. 
 
 <p align="center">
-<img src="/Gambar/ultrasonik-sensor-hc-sr04.jpg" height="200">
+<img src="/Gambar/ultrasonik-sensor-hc-sr04.jpg" height="150">
 </p>
 
 Sensor ultrasonik HC-SR04 memiliki 4 kaki terminal :
@@ -23,3 +23,25 @@ Sensor ultrasonik HC-SR04 memiliki 4 kaki terminal :
 * **GND**, untuk catu daya kutub (-)
 * **Trig**, bagian transmitter (pemancar)
 * **Echo**, bagian receiver (penerima)
+
+Sekarang kita akan mencoba menggunakan sensor ini untuk mengukur jarak.
+
+**Bahan-bahan yang dibutuhkan :**
+* 1x Sensor Ultrasonik HC-SR04
+* 1x Arduino Uno dan Kabel USB
+* 1x Project Board
+* Beberapa Kabel Jumper Male to Male
+
+<p align="center">
+<img src="/Gambar/rangkaian-sensor-hcsr04.png" height="450">
+</p>
+
+**Konfigurasi Pin :**
+
+| Sensor HC-SR04  | Arduino Uno |
+| ------------- | ------------- |
+| VCC | 5V  |
+| GND | GND  |
+| Trig | D5  |
+| Echo | D6  |
+
