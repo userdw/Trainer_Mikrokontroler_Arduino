@@ -25,6 +25,14 @@ Untuk menggunakan sensor ini kita memerlukan library tambahan agar sensor ini bi
 <img src="/Gambar/rangkaian-dht11.png" height="450">
 </p>
 
+**Konfigurasi Pin:**
+
+| DHT11  | Arduino Uno |
+| ------------- | ------------- |
+| +  | 5V  |
+| OUT | D2  |
+| - | GND  |
+
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
 2. Unduh library ini [DHT11](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Kumpulan%20Library/DHT-sensor-library-master.zip) dan [Adafruit_Sensor](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/Kumpulan%20Library/Adafruit_Sensor-master.zip).
