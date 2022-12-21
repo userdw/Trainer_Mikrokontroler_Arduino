@@ -80,7 +80,8 @@ Data digital dan analog yang sudah kita dapatkan di atas bisa kita manfaatkan un
 * 1x Senter atau Cahaya Lampu HP
 * 1x Modul Sensor LDR
 * 1x LED Warna Merah
-* 1x Resistor 1kOhm 
+* 1x LED Warna Hijau
+* 2x Resistor 1kOhm 
 * 1x Project Board
 * 1x Arduino Uno dan Kabel USB
 * Beberapa Kabel Jumper Male to Male
@@ -100,4 +101,62 @@ Jika sketch sudah terupload dengan benar, maka saat LDR kita dekatkan dengan cah
 
 ### Penjelasan Kode Sketch
 
+```
+#define pinLDR 5
+#define LEDMerah 4
+#define LEDHijau 3
+```
+Instruksi di atas digunakan untuk membuat variabel bernama **pinLDR**, **LEDMerah**, dan **LEDHijau** masing-masing memiliki nilai yang mewakili nomor pin digital yang digunakan.
+
+```
+  if(bacaLDR == LOW){
+    digitalWrite(LEDHijau, HIGH);
+    digitalWrite(LEDMerah, LOW); 
+  }
+  ```
+  Instruksi di atas merupakan seleksi kontrol menggunakan if, jadi saat kondisi bacaLDR bernilai LOW, maka LED hijau akan menyala dan LED merah akan mati.
+  
+ ```
+   else{
+    digitalWrite(LEDHijau, LOW);
+    digitalWrite(LEDMerah, HIGH);
+  }
+  ```
+Instruksi di atas merupakan seleksi kontrol menggunakan if, jadi saat kondisi bacaLDR selain bernilai LOW, maka instruksi else akan dijalankan sehingga LED hijau akan mati dan LED merah akan hidup.
+
+## Menggunakan Data Analog untuk Membuat Indikator dengan LED
+
+**Bahan-bahan yang dibutuhkan :**
+* 1x Senter atau Cahaya Lampu HP
+* 1x Modul Sensor LDR
+* 1x LED Warna Merah
+* 1x Resistor 1kOhm 
+* 1x Project Board
+* 1x Arduino Uno dan Kabel USB
+* Beberapa Kabel Jumper Male to Male
+
+<p align="center">
+<img src="/Gambar/rangkaian-sensor-ldr-led-analog.png" height="450">
+</p>
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [ldr_led_analog.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/02_Mengukur%20Tingkat%20Intensitas%20Cahaya%20dengan%20LDR/ldr_led_analog.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+
+Jika sketch sudah terupload dengan benar, maka saat LDR kita kasih cahaya dari HP nilai analognya semakin kecil, jika nilai analognya kurang dari atau sama dengan 150, maka LED merah akan hidup begitu juga dengan sebaliknya.
+
+### Penjelasan Kode Sketch
+
+```
+  if(bacaLDR <= 150){
+    digitalWrite(LEDMerah, HIGH); 
+  }
+  else{
+    digitalWrite(LEDMerah, LOW);
+  }
+  ```
+Instruksi di atas merupakan seleksi kondisi yang menggunakan if, jika kondisi di dalam if terpenuhi (nilai analog dari bacaLDR <=150), maka LED merah akan menyala, jika kondisi tidak terpenuhi (nilai analog dari bacaLDR > 150), maka LED merah akan mati.
 
