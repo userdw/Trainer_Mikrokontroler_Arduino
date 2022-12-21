@@ -72,7 +72,7 @@ Setelah kita mencoba keluaran data digital dari sensor LDR, sekarang kita akan m
 
 Jika sketch sudah terupload dengan benar, maka saat kita membuka serial monitor, nilai analog akan semakin besar jika LDR tidak menerima cahaya begitu juga sebaliknya nilai analognya semakin kecil jika LDR kita dekatkan dengan sinar lampu dari HP.
 
-## Membuat Indikator dengan LED
+## Menggunakan Data Digital untuk Membuat Indikator dengan LED
 
 Data digital dan analog yang sudah kita dapatkan di atas bisa kita manfaatkan untuk menghidupkan sebuah LED.
 
@@ -97,3 +97,7 @@ Data digital dan analog yang sudah kita dapatkan di atas bisa kita manfaatkan un
 5. Jangan lupa untuk memilih baudrate sebesar 9600.
 
 Jika sketch sudah terupload dengan benar, maka saat LDR kita dekatkan dengan cahaya HP, maka LED warna hijau akan menyala sedangkan jika LDR tidak kita dekatkan dengan cahaya HP, maka LED warna merah yang akan menyala.
+
+### Penjelasan Kode Sketch
+
+
