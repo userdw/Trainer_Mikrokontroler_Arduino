@@ -40,7 +40,7 @@ Selain itu, modul ini juga dilengkapi dengan LED indikator untuk output digitaln
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
 2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
-3. Unduh kode program [baca_digital_LDR.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/02_Mengukur%20Tingkat%20Intensitas%20Cahaya%20dengan%20LDR/baca_digital_LDR.ino).
+3. Unduh kode program [baca_digital_ldr.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/02_Mengukur%20Tingkat%20Intensitas%20Cahaya%20dengan%20LDR/baca_digital_LDR.ino).
 4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
 5. Jangan lupa untuk memilih baudrate sebesar 9600.
 
@@ -48,6 +48,43 @@ Pada board modul sensor LDR ini sudah dilengkapi dengan **rangkaian resistor pul
 
 Jika sketch sudah terupload dengan benar, maka saat LDR tidak mendeteksi adanya cahaya (sinar HP), maka data yang terbaca adalah HIGH (1) dengan LED indikator mati. Sedangkan jika LDR mendeteksi adanya cahaya, maka data yang terbaca di Arduino Uno adalah LOW (0) dengan LED indikator hidup.
 
+## Membaca Data Analog dari Sensor LDR
 
+Setelah kita mencoba keluaran data digital dari sensor LDR, sekarang kita akan mencoba membaca data analognya.
 
+**Bahan-bahan yang dibutuhkan :**
+* 1x Senter atau Cahaya HP
+* 1x Modul Sensor LDR
+* 1x Project Board
+* 1x Arduino Uno dan Kabel USB
+* Beberapa Kabel Jumper Male to Male
 
+<p align="center">
+<img src="/Gambar/rangkaian-sensor-ldr-analog.png" height="450">
+</p>
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [baca_analog_ldr.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/02_Mengukur%20Tingkat%20Intensitas%20Cahaya%20dengan%20LDR/baca_analog_LDR.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+
+Jika sketch sudah terupload dengan benar, maka saat kita membuka serial monitor, nilai analog akan semakin besar jika LDR tidak menerima cahaya begitu juga sebaliknya nilai analognya semakin kecil jika LDR kita dekatkan dengan sinar lampu dari HP.
+
+## Membuat Indikator dengan LED
+
+Data digital dan analog yang sudah kita dapatkan di atas bisa kita manfaatkan untuk menghidupkan sebuah LED.
+
+**Bahan-bahan yang dibutuhkan :**
+* 1x Senter atau Cahaya Lampu HP
+* 1x Modul Sensor LDR
+* 1x LED Warna Merah
+* 1x Resistor 1kOhm 
+* 1x Project Board
+* 1x Arduino Uno dan Kabel USB
+* Beberapa Kabel Jumper Male to Male
+
+<p align="center">
+<img src="/Gambar/rangkaian-sensor-ldr-led-digital.png" height="450">
+</p>
