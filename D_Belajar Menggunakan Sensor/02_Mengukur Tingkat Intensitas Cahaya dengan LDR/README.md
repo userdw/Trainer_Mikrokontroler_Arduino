@@ -86,5 +86,14 @@ Data digital dan analog yang sudah kita dapatkan di atas bisa kita manfaatkan un
 * Beberapa Kabel Jumper Male to Male
 
 <p align="center">
-<img src="/Gambar/rangkaian-sensor-ldr-led-digital.png" height="450">
+<img src="/Gambar/rangkaian-sensor-ldr-led-digital-2.png" height="450">
 </p>
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [ldr_led_digital.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/02_Mengukur%20Tingkat%20Intensitas%20Cahaya%20dengan%20LDR/ldr_led_digital.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+
+Jika sketch sudah terupload dengan benar, maka saat LDR kita dekatkan dengan cahaya HP, maka LED warna hijau akan menyala sedangkan jika LDR tidak kita dekatkan dengan cahaya HP, maka LED warna merah yang akan menyala.
