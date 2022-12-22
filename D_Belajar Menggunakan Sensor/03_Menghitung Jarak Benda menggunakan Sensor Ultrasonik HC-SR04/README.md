@@ -175,7 +175,7 @@ Dengan adanya alarm akan sangat memudahkan kita ketika hendak memakirkan sebuah 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
 2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
-3. Unduh kode program [hcsr04.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/03_Menghitung%20Jarak%20Benda%20menggunakan%20Sensor%20Ultrasonik%20HC-SR04/hcsr04-led-buzzer.ino).
+3. Unduh kode program [hcsr04_led_buzzer.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/03_Menghitung%20Jarak%20Benda%20menggunakan%20Sensor%20Ultrasonik%20HC-SR04/hcsr04-led-buzzer.ino).
 4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
 5. Jangan lupa untuk memilih baudrate sebesar 9600.
 
