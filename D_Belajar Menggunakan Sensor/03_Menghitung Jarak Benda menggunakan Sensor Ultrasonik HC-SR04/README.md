@@ -175,8 +175,22 @@ Dengan adanya alarm akan sangat memudahkan kita ketika hendak memakirkan sebuah 
 **Langkah-langkahnya :**
 1. Ikuti rangkaian seperti di atas.
 2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
-3. Unduh kode program [sensor_ultrasonik_hcsr04.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/03_Menghitung%20Jarak%20Benda%20menggunakan%20Sensor%20Ultrasonik%20HC-SR04/sensor_ultrasonik_hcsr04.ino).
+3. Unduh kode program [hcsr04.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/03_Menghitung%20Jarak%20Benda%20menggunakan%20Sensor%20Ultrasonik%20HC-SR04/hcsr04-led-buzzer.ino).
 4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
 5. Jangan lupa untuk memilih baudrate sebesar 9600.
 
+Jika sketch sudah terupload dengan benar, maka saat nilai jarak kurang dari atau sama dengan 5cm, maka LED dan buzzer akan hidup. Sebaliknya, jika jarak lebih dari 5cm, maka LED dan buzzer akan mati.
 
+### Penjelasan Kode Sketch
+
+```
+if(jarak <= 5){
+  digitalWrite(pinLED, HIGH);
+  digitalWrite(pinBuzzer, HIGH);
+}
+else{
+  digitalWrite(pinLED, LOW);
+  digitalWrite(pinBuzzer, LOW);
+}
+```
+Instruksi di atas merupakan seleksi kontrol if dengan kondisi jarak, jika nilai jarak kurang atau sama dengan 5, maka instruksi untuk menyalakan LED dan buzzer akan dijalankan. Sebaliknya, jika kondisi lebih dari 5, maka instruksi untuk mematikan LED dan buzzer akan dijalankan.
