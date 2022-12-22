@@ -139,4 +139,44 @@ Setelah kita berhasil mendapatkan data jarak di atas, data tersebut bisa kita ma
 
 Dengan adanya alarm akan sangat memudahkan kita ketika hendak memakirkan sebuah mobil.
 
-**Bahan-bahan yang Dibutuhkan :**
+**Bahan-bahan yang dibutuhkan :**
+* 1x Sensor Ultrasonik HCSR04
+* 1x LED Warna Merah
+* 1x Resistor 1kOhm
+* 1x Buzzer
+* 1x Arduino Uno dan Kabel
+* 1x Project Board
+* Beberapa Kabel Jumper Male to Male
+
+<p align="center">
+<img src="/Gambar/rangkaian-hcsr04-led-buzzer.png" height="450">
+</p>
+
+**Konfigurasi Pin :**
+
+| Sensor HC-SR04  | Arduino Uno |
+| ------------- | ------------- |
+| VCC | 5V  |
+| GND | GND  |
+| Trig | D3  |
+| Echo | D2  |
+
+| LED  | Arduino Uno | Resistor |
+| ------------- | ------------- | ------------- |
+| Anoda (+) | -  | Kaki (-)  |
+| Katoda (-) | GND  | -  |
+| - | D7  | Kaki (+)  |
+
+| Buzzer  | Arduino Uno |
+| ------------- | ------------- |
+| Kaki (+) | D6  |
+| Kaki (-) | GND  |
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [sensor_ultrasonik_hcsr04.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/03_Menghitung%20Jarak%20Benda%20menggunakan%20Sensor%20Ultrasonik%20HC-SR04/sensor_ultrasonik_hcsr04.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+
+
