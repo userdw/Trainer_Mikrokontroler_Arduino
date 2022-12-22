@@ -132,3 +132,11 @@ Instruksi di atas digunakan untuk menampilkan hasil pengukuran yang dihasilkan o
 delay(100);
 ```
 **Kita memerlukan sebuah delay** untuk setiap kali sensor mengirim gelombang dan juga membaca gelombang pantulan.
+
+## Sensor Ultrasonik dengan Indikator LED dan Alarm
+
+Setelah kita berhasil mendapatkan data jarak di atas, data tersebut bisa kita manfaatkan untuk banyak hal salah satunya bisa digunakan sebagai sistem alarm untuk parkir mobil. Jadi sensornya kita taruh pada bagian belakang mobil, ketika mobil bergerak mundur saat jarak antara bagian belakang mobil dengan benda yang ada di belakang mobil sudah dekat, maka alarm akan berbunyi.
+
+Dengan adanya alarm akan sangat memudahkan kita ketika hendak memakirkan sebuah mobil.
+
+**Bahan-bahan yang Dibutuhkan :**
