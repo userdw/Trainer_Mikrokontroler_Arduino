@@ -199,4 +199,37 @@ Data pada analog yang kita gunakan pastinya akan berubah-ubah, ketika ada update
 
 Sekarang kita akan mencoba menampilkan data dari sensor DHT11 pada LCD 16x2.
 
+**Bahan-bahan yang dibutuhkan :**
+* 1x Sensor DHT11
+* 1x LCD 16x2 I2C
+* 1x Arduino Uno dan Kabel
+* 1x Project Board
+* Beberapa Kabel Jumper Male to Male dan Male to Female
 
+<p align="center">
+<img src="/Gambar/rangkaian-dht11-lcd16x2.png" height="450">
+</p>
+
+**Konfigurasi Pin :**
+
+| LCD 16x2 I2C  | Arduino Uno |
+| ------------- | ------------- |
+| VCC  | 5V  |
+| GND | GND  |
+| SCL | A5  |
+| SDA | A4  |
+
+| DHT11  | Arduino Uno |
+| ------------- | ------------- |
+| (+)  | 5V  |
+| (-) | GND  |
+| Out | D6  |
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [dht11_lcd16x2.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/E_Bermain-main%20dengan%20Display/01_Menampilkan%20Karakter%20Menggunakan%20LCD%2016x2/dht11_lcd16x2.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+
+Jika sketch di atas sudah terupload dengan benar, maka pada layar LCD akan menampilkan data DHT11, yaitu suhu dan kelembapan.
