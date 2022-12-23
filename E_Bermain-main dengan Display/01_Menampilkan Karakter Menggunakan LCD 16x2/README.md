@@ -141,3 +141,56 @@ if(bacaPB_KeDua == LOW){
 ```
 Jika tombol ke-2 kita tekan, maka perintah **lcd.clear()** akan dijalankan sehingga akan menghapus data yang sudah kita tampilkan pada LCD. Untuk menampilkan data lagi, kita harus **mereset Arduino Uno** agar **void setup()** dijalankan yang didalamnya terdapat perintah untuk menampilkan data karakter pada LCD.
 
+## Menampilkan Data Analog Potensiometer di LCD 16x2
+
+Sekarang kita akan mencoba untuk membaca data analog dari potensiometer di LCD 16x2.
+
+**Bahan-bahan yang dibutuhkan :**
+* 1x LCD 16x2 I2C
+* 1x Potensiometer
+* 1x Arduino Uno dan Kabel USB
+* 1x Project Board
+* Beberapa Kabel Jumper Male to Male dan Male to Female
+
+<p align="center">
+<img src="/Gambar/rangkaian-potensiometer-lcd16x2.png" height="450">
+</p>
+
+**Konfigurasi Pin :**
+
+| LCD 16x2 I2C  | Arduino Uno |
+| ------------- | ------------- |
+| VCC  | 5V  |
+| GND | GND  |
+| SCL | A5  |
+| SDA | A4  |
+
+| Potensiometer  | Arduino Uno |
+| ------------- | ------------- |
+| (+)  | 5V  |
+| (-) | GND  |
+| Data | A0  |
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [potensiometer_lcd16x2.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/E_Bermain-main%20dengan%20Display/01_Menampilkan%20Karakter%20Menggunakan%20LCD%2016x2/potensiometer_lcd16x2.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
+
+Jika sketch sudah terupload dengan baik, maka pada layar LCD akan tampil data analog dari potensiometer, jika kita putar tuas potensiometernya, maka nilai pada LCD juga akan berubah.
+
+### Penjelasan Kode Sketch
+
+```
+lcd.print("Analog : ");
+lcd.setCursor(10,0);
+lcd.print(bacaAnalog);
+```
+Instruksi di atas digunakan untuk menampilkan data analog pada LCD.
+
+```
+delay(50);
+lcd.clear();
+```
+Data pada analog yang kita gunakan pastinya akan berubah-ubah, ketika ada update data pada LCD, maka kita perlu menghapus data sebelumnya agar nanti karakternya tidak menumpuk saat ditampilkan pada LCD, oleh karena itu kita harus menghapus datanya dengan menggunakan perintah **lcd.clear();**.
