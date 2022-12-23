@@ -43,5 +43,65 @@ Jika sketch sudah terupload dengan benar, maka saat kita menekan setiap tombol p
 <img src="/Gambar/data-remote-ir-serial-monitor.png" height="450">
 </p>
 
+**Sekarang kita coba untuk mencatat kode dari setiap tombol :**
+
+| Tombol  | Kode |
+| ------------- | ------------- |
+| 1 | 69 |
+| 2 | 70  |
+| 3 | 71  |
+| 4 | 68 |
+| 5 | 64  |
+| 6 | 67  |
+| 7 | 7 |
+| 8 | 21 |
+| 9 | 9  |
+| 0 | 25 |
+| * | 22  |
+| # | 13  |
+| Atas | 24 |
+| Kanan | 90  |
+| Bawah | 8 |
+| Kiri | 82  |
+| OK | 28 |
+
 ### Penjelasan Kode Sketch
+
+```
+#include <Wire.h>
+#include <Arduino.h>
+#include "EcadioIRremote.h"
+```
+Instruksi di atas digunakan untuk memanggil library **Wire.h**, **Arduino.h**, dan **EcadioIRremote.h** ketiga library ini kita butuhkan saat mengakses remote inframerah (IR).
+
+```
+#define RECV_PIN 2
+```
+Instruksi di atas digunakan untuk membuat variabel bernama **RECV_PIN** dengan nilai 2 yang merepresentasikan nomor pin digital Arduino Uno yang kita gunakan karena output sinyal dari penerima dihubungkan dengan nomor pin digital 2.
+
+```
+IRrecv IR(RECV_PIN);
+```
+Instruksi di atas digunakan untuk inisialisasi atau memberikan nama obyek library yang kita gunakan, yaitu dengan nama **IR**.
+
+```
+IR.enableIRIn();
+```
+Instruksi di atas kita gunakan untuk memulai receiver.
+
+```
+if (IR.decode()){
+```
+Instruksi di atas digunakan untuk menyaring sinyal inframerah antara pemancar dengan penerima, jika valid, maka kondisi IR.decode akan bernilai True.
+
+```
+if (IR.isReleased()){
+```
+Instruksi di atas digunakan jika sinyal inframerah yang valid telah lengkap dipancarkan dan diterima oleh receiver, maka kondisi IR.isReleased akan True.
+
+```
+Serial.print("Kode Tombol : ");
+Serial.println(IR.keycode, DEC);
+Serial.println("*************"); 
+```
 
