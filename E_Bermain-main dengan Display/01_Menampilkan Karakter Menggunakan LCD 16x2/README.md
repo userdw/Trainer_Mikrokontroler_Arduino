@@ -197,4 +197,6 @@ Data pada analog yang kita gunakan pastinya akan berubah-ubah, ketika ada update
 
 ## Menampilkan Data Suhu dan Kelembapan di LCD 16x2
 
+Sekarang kita akan mencoba menampilkan data dari sensor DHT11 pada LCD 16x2.
+
 
