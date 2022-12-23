@@ -127,4 +127,36 @@ Dari percobaan di atas, dapat kita simpulkan bahwa setiap tombol remote memiliki
 <img src="/Gambar/rangkaian-remote-ir-led.png" height="450">
 </p>
 
+**Konfigurasi Pin :**
+
+| Remote IR  | Arduino Uno |
+| ------------- | ------------- |
+| Kaki (+) | 5V  |
+| Kaki (-) | GND  |
+| S | D2  |
+
+| Resistor untuk LED Merah  | Arduino Uno | LED Merah |
+| ------------- | ------------- |------------- |
+| - |  GND |Katoda (-) |
+| Kaki (+) | D7  |- |
+| Kaki (-) |  |Anoda (+) |
+
+| Resistor untuk LED Kuning  | Arduino Uno | LED Kuning |
+| ------------- | ------------- |------------- |
+| - |  GND |Katoda (-) |
+| Kaki (+) | D6  |- |
+| Kaki (-) |  |Anoda (+) |
+
+| Resistor untuk LED Hijau  | Arduino Uno | LED Hijau |
+| ------------- | ------------- |------------- |
+| - |  GND |Katoda (-) |
+| Kaki (+) | D5  |- |
+| Kaki (-) |  |Anoda (+) |
+
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [remote_ir_led.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/D_Belajar%20Menggunakan%20Sensor/04_Mencoba%20Remote%20Inframerah%20(IR)/remote_ir_led.ino).
+4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
+5. Jangan lupa untuk memilih baudrate sebesar 9600.
 
