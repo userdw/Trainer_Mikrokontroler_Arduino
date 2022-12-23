@@ -160,3 +160,38 @@ Dari percobaan di atas, dapat kita simpulkan bahwa setiap tombol remote memiliki
 4. Upload kode sketch tersebut, jika sudah silahkan buka serial monitor pada Arduino IDE.
 5. Jangan lupa untuk memilih baudrate sebesar 9600.
 
+Jika sketch sudah terupload dengan benar, maka kondisi akan mengikuti seperti tabel di bawah ini:
+|  | LED Merah (On) |LED Merah (Off) |LED Kuning (On) |LED Kuning (Off) |LED Hijau (On) |LED Hijau (Off) |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
+| **Tombol** | 1 |4 |2 |5 |3 |6|
+
+### Penjelasan Kode Sketch
+
+```
+      if(IR.keycode == 69){
+        digitalWrite(LEDMerah, HIGH);    
+      }
+      else if(IR.keycode == 70){
+        digitalWrite(LEDKuning, HIGH);
+      }
+      else if(IR.keycode == 71){
+        digitalWrite(LEDHijau, HIGH);
+      }
+      else if(IR.keycode == 68){
+        digitalWrite(LEDMerah, LOW);
+      }
+      else if(IR.keycode == 64){
+        digitalWrite(LEDKuning, LOW);
+      }
+      else if(IR.keycode == 67){
+        digitalWrite(LEDHijau, LOW);
+      }
+```
+Instruksi di atas merupakan seleksi kondisi dengan if, jadi logikanya jika :
+* IR.keycode bernilai 69, maka LED merah akan menyala.
+* IR.keycode bernilai 70, maka LED kuning akan menyala.
+* IR.keycode bernilai 71, maka LED hijau akan menyala.
+* IR.keycode bernilai 68, maka LED merah akan mati.
+* IR.keycode bernilai 64, maka LED kuning akan mati.
+* IR.keycode bernilai 67, maka LED hijau akan mati.
+
