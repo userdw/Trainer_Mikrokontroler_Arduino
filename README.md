@@ -50,8 +50,8 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 #### D. Belajar Menggunakan Sensor
 1. [Mengetahui Suhu dan Kelembapan Lingkungan dengan Sensor DHT11](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/D_Belajar%20Menggunakan%20Sensor/01_Mengetahui%20Suhu%20dan%20Kelembapan%20Lingkungan%20dengan%20Sensor%20DHT11)
 2. [Mengukur Tingkat Intensitas Cahaya dengan Sensor LDR](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/D_Belajar%20Menggunakan%20Sensor/02_Mengukur%20Tingkat%20Intensitas%20Cahaya%20dengan%20LDR)
-3. Mengetahui Jarak Benda Menggunakan Sensor Ultrasonic
-4. Mencoba Remote Inframerah (IR)
+3. [Mengetahui Jarak Benda Menggunakan Sensor Ultrasonic](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/D_Belajar%20Menggunakan%20Sensor/03_Menghitung%20Jarak%20Benda%20menggunakan%20Sensor%20Ultrasonik%20HC-SR04)
+4. [Mencoba Remote Inframerah (IR)](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/D_Belajar%20Menggunakan%20Sensor/04_Mencoba%20Remote%20Inframerah%20(IR))
 
 #### E. Bermain-main dengan Display
 
