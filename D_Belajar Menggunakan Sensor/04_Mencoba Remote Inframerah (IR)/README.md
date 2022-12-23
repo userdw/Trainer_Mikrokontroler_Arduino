@@ -104,4 +104,24 @@ Serial.print("Kode Tombol : ");
 Serial.println(IR.keycode, DEC);
 Serial.println("*************"); 
 ```
+Instruksi **IR.keycode** digunakan untuk membaca kode dari tombol yang ditekan. Hasil kode setiap tombol itu bentuknya dalam bilangan heksa agar mudah kita baca, kita konversi menggunakan perintah **DEC**, yang berguna untuk mengkonversi bilangan heksa ke dalam bilangan desimal.
+
+```
+IR.resume();
+```
+Digunakan untuk mulai menerima sinyal inframerah lagi.
+
+## Menghidupkan dan Mematikan LED dengan Remote IR
+
+Dari percobaan di atas, dapat kita simpulkan bahwa setiap tombol remote memiliki kode yang berbeda-beda sehingga kode tersebut bisa kita manfaatkan untuk mengendalikan komponen-komponen elektronika salah satunya LED.
+
+**Bahan-bahan yang dibutuhkan :**
+* 1x LED Merah, 1x LED Kuning, 1x LED Hijau
+* 1x Remote IR (Pemancar dan Penerima)
+* 3x Resistor 1kOhm
+* 1x Arduino Uno dan Kabel USB
+* 1x Project Board
+* Beberapa Kabel Jumper Male to Male
+
+
 
