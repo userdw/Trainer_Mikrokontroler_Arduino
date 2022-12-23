@@ -194,3 +194,7 @@ delay(50);
 lcd.clear();
 ```
 Data pada analog yang kita gunakan pastinya akan berubah-ubah, ketika ada update data pada LCD, maka kita perlu menghapus data sebelumnya agar nanti karakternya tidak menumpuk saat ditampilkan pada LCD, oleh karena itu kita harus menghapus datanya dengan menggunakan perintah **lcd.clear();**.
+
+## Menampilkan Data Suhu dan Kelembapan di LCD 16x2
+
+
