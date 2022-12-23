@@ -123,5 +123,8 @@ Dari percobaan di atas, dapat kita simpulkan bahwa setiap tombol remote memiliki
 * 1x Project Board
 * Beberapa Kabel Jumper Male to Male
 
+<p align="center">
+<img src="/Gambar/rangkaian-remote-ir-led.png" height="450">
+</p>
 
 
