@@ -54,6 +54,8 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 4. [Mencoba Remote Inframerah (IR)](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/D_Belajar%20Menggunakan%20Sensor/04_Mencoba%20Remote%20Inframerah%20(IR))
 
 #### E. Bermain-main dengan Display
+1. [Menampilkan Karakter Menggunakan LCD 16x2](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/E_Bermain-main%20dengan%20Display/01_Menampilkan%20Karakter%20Menggunakan%20LCD%2016x2)
+
 
 
 
