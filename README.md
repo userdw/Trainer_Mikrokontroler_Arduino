@@ -56,7 +56,7 @@ Pada bagian ini, kita akan belajar beberapa proyek yang memanfaatkan pin-pin GPI
 #### E. Bermain-main dengan Display
 1. [Menampilkan Karakter Menggunakan LCD 16x2](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/E_Bermain-main%20dengan%20Display/01_Menampilkan%20Karakter%20Menggunakan%20LCD%2016x2)
 2. [Menampilkan Digit Angka Menggunakan 7 Segment](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/E_Bermain-main%20dengan%20Display/02_Menampilkan%20Digit%20Angka%20Menggunakan%207%20Segment)
-3. [Menampilkan Digit Angka Menggunakan Dot Matrix 5x7]
+3. [Mencoba Display Dot Matrix 5x7]
 
 #### F. Aktuator
 1. [Mengendalikan Posisi Servo SG90](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/tree/main/F_Aktuator/01_Mengendalikan%20Posisi%20Servo%20SG90)
