@@ -59,5 +59,10 @@ Sekarang kita akan mencoba untuk menghidupkan secara bergantian pada bagian kolo
 | A3 |-  |-  |-  | Kaki (2)  |  |
 | A4 | - | - | - | -  | Kaki (2) |
 
+**Langkah-langkahnya :**
+1. Ikuti rangkaian seperti di atas.
+2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
+3. Unduh kode program [baris_kolom.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/E_Bermain-main%20dengan%20Display/03_Menampilkan%20Digit%20Angka%20dengan%20Dot%20Matrix%205x7/baris_kolom_dotmatrix.ino).
+4. Upload kode sketch tersebut.
 
-
+Jika sketch tersebut sudah terupload dengan benar, maka tampilan dot matrix 5x7 kita akan bergantian hidupnya dari baris ke-1 hingga ke-7 kemudian berganti dari kolom ke-1 sampai ke-5.
