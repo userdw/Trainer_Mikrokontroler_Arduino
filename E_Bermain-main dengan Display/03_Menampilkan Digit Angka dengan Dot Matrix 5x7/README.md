@@ -51,4 +51,13 @@ Sekarang kita akan mencoba untuk menghidupkan secara bergantian pada bagian kolo
 | Pin 10 |-  |-  |-  | Kaki (1)  |  |
 | Pin 13 | - | - | - | -  | Kaki (1) |
 
+| Arduino Uno | Resistor (1) | Resistor (2) |Resistor (3) |Resistor (4) |Resistor (5) |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |
+| A0 | Kaki (2) | - | - | - | - |
+| A1 | - | Kaki (2) | - | - | - |
+| A2 | - |-  | Kaki (2)  | - | - |
+| A3 |-  |-  |-  | Kaki (2)  |  |
+| A4 | - | - | - | -  | Kaki (2) |
+
+
 
