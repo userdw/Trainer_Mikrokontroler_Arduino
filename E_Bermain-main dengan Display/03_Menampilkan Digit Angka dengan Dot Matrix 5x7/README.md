@@ -27,3 +27,28 @@ Sekarang kita akan mencoba untuk menghidupkan secara bergantian pada bagian kolo
 * 1x Project Board
 * Beberapa Kabel Jumper Male to Male dan Male to Female
 
+<p align="center">
+<img src="/Gambar/rangkaian-dot-matrix-5x7 (2).png" height="450">
+</p>
+
+**Konfigurasi Pin :**
+
+| Dot Matrix 5x7 (Anoda) | Arduino Uno | 
+| ------------- | ------------- |
+| Pin 1 | D13  |
+| Pin 2 | D12 |
+| Pin 5 | D11 |
+| Pin 7 | D10  |
+| Pin 8 | D9  |
+| Pin 9 | D8  |
+| Pin 14 | D7  |
+
+| Dot Matrix 5x7 (Katoda) | Resistor (1) | Resistor (2) |Resistor (3) |Resistor (4) |Resistor (5) |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |
+| Pin 3 | Kaki (1) | - | - | - | - |
+| Pin 4 | - | Kaki (1) | - | - | - |
+| Pin 6 | - |-  | Kaki (1)  | - | - |
+| Pin 10 |-  |-  |-  | Kaki (1)  |  |
+| Pin 13 | - | - | - | -  | Kaki (1) |
+
+
