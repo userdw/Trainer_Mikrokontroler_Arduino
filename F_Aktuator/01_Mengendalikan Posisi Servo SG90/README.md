@@ -144,5 +144,24 @@ Pada percobaan potensiometer, kita mengetahui bahwa potensiometer dapat menghasi
 **Langkah-langkahnya :**
 1. Ikuti seperti rangkaian di atas.
 2. Pilih COM PORT pada Arduino IDE sesuai dengan port Arduino Uno kita.
-3. Unduh kode program [sequence_motor_servo.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/F_Aktuator/01_Mengendalikan%20Posisi%20Servo%20SG90/sequence_motor_servo.ino).
+3. Unduh kode program [potensiometer_motor_servo.ino](https://github.com/userdw/Trainer_Mikrokontroler_Arduino/blob/main/F_Aktuator/01_Mengendalikan%20Posisi%20Servo%20SG90/potensiometer_motor_servo.ino).
 4. Upload kode sketch tersebut.
+
+Jika sketch sudah terupload dengan benar, maka kita bisa mengendalikan pergerakan motor servo dengan memutar knob potensiometer.
+
+### Penjelasan Kode Sketch
+
+```
+int bacaAnalog = analogRead(pinPotensiometer)
+```
+Instruksi di atas digunakan untuk membaca data analog dari potensiometer.
+
+```
+int sudut = map(bacaAnalog, 0, 1023, 0, 180);
+```
+Karena nilai ADC yang terbaca nilainya 0 hingga 1023, maka kita perlu menscalenya agar sesuai dengan range sudut dari motor servo, yaitu 0 hingga 180. Sehingga kita perlu melakukan scale nilai dengan fungsi **map** kita scale nilai ADC 0 ~ 1023 menjadi 0 ~ 180 sehingga bisa kita gunakan untuk menggerakkan motor servo. Hasil scalenya kita simpan pada variabel sudut.
+
+```
+myservo.write(sudut);
+```
+Hasil nilai scale pada variabel sudut akan digunakan untuk menggerakkan posisi motor servo.
