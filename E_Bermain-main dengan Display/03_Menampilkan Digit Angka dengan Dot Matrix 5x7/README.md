@@ -1,4 +1,4 @@
-# Menampilkan Digit Angka dengan Dot Matrix 5x7
+# Mencoba Display Dot Matrix 5x7
 
 Pada percobaan ini kita akan belajar menggunakan LED Dot Matrix 5x7.
 
